@@ -31,9 +31,18 @@ type: page
                 {{ post.date | date:"%F" }}.
                 </time>
                 <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
+<!--
                 {% include category.html %}
                 {% include tag.html %}
+				-->
+				                    <div>
+
+                                        
+                                        {% include category.html %}
+
+                                        {% include tag.html %} 
+
+                                    </div> 
             </li>
 
           {% endfor %}
