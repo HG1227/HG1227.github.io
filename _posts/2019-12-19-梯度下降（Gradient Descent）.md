@@ -313,7 +313,7 @@ $$
 
 
 
-## **python 实现梯度下降**
+## **6. python 实现梯度下降**
 
 ```python
 import numpy as np
@@ -378,8 +378,9 @@ plt.show()
    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191219150937.png"/> 
 </center>
 
-
+源码：[传送门](https://github.com/HG1227/ML/tree/master/梯度下降（Gradient Descent）) 
 
 ## 参考
 
 1. [梯度下降（Gradient Descent）小结](https://www.cnblogs.com/pinard/p/5970503.html) 
+2. [深入浅出--梯度下降法及其实现](https://www.jianshu.com/p/c7e642877b0e) 
