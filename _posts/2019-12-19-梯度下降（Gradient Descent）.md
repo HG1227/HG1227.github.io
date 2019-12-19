@@ -179,9 +179,7 @@ h_\theta(x_1, x_2, ...x_n) = \theta_0 + \theta_{1}x_1 + ... + \theta_{n}x_{n}
 $$
 
 
-的矩阵表达方式为：$h_\mathbf{\theta}(\mathbf{X}) = \mathbf{X\theta}$  , 其中， 假设函数 $h_\mathbf{\theta}(\mathbf{X})$ 为$m\times1$的向量 , $θ$ 为$(n+1) \times 1$ 的向量
-
-里面有n+1个代数法的模型参数。$\mathbf{X}$ 为 $m\times (n+1)$ 维的矩阵。m 代表样本的个数，n+1代表样本的特征数。
+的矩阵表达方式为：$h_\mathbf{\theta}(\mathbf{X}) = \mathbf{X\theta}$  , 其中， 假设函数 $h_\mathbf{\theta}(\mathbf{X})$ 为$m\times1$的向量 , $θ$ 为$(n+1) \times 1$ 的向量 , 里面有n+1个代数法的模型参数。$\mathbf{X}$ 为 $m\times (n+1)$ 维的矩阵。m 代表样本的个数，n+1代表样本的特征数。
 
 
 
@@ -312,6 +310,73 @@ $$
 梯度下降法和最小二乘法相比，梯度下降法需要选择步长，而最小二乘法不需要。梯度下降法是迭代求解，最小二乘法是计算解析解。如果样本量不算很大，且存在解析解，最小二乘法比起梯度下降法要有优势，计算速度很快。但是如果样本量很大，用最小二乘法由于需要求一个超级大的逆矩阵，这时就很难或者很慢才能求解解析解了，使用迭代的梯度下降法比较有优势。
 
 梯度下降法和牛顿法/拟牛顿法相比，两者都是迭代求解，不过梯度下降法是梯度求解，而牛顿法/拟牛顿法是用二阶的海森矩阵的逆矩阵或伪逆矩阵求解。相对而言，使用牛顿法/拟牛顿法收敛更快。但是每次迭代的时间比梯度下降法长。
+
+
+
+## **python 实现梯度下降**
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Size of the points dataset.
+m = 20
+
+# Points x-coordinate and dummy value (x0, x1).
+X0 = np.ones((m, 1))
+X1 = np.arange(1, m+1).reshape(m, 1)
+X = np.hstack((X0, X1))
+
+# Points y-coordinate
+y = np.array([
+    3, 4, 5, 5, 2, 4, 7, 8, 11, 8, 12,
+    11, 13, 13, 16, 17, 18, 17, 19, 21
+]).reshape(m, 1)
+
+# The Learning Rate alpha.
+alpha = 0.01
+
+def error_function(theta, X, y):
+    '''Error function J definition.'''
+    diff = np.dot(X, theta) - y
+    return (1./2*m) * np.dot(diff.T, diff)
+
+def gradient_function(theta, X, y):
+    '''损失函数求偏导'''
+    diff = np.dot(X, theta) - y
+    return (1./m) * np.dot(X.T, diff)
+
+def gradient_descent(X, y, alpha):
+    '''Perform gradient descent.'''
+    # theta 初始化的值
+    theta = np.array([1, 1]).reshape(2, 1)
+    # gradient 损失函数求偏导后的结果
+    gradient = gradient_function(theta, X, y)
+    while not np.all(np.absolute(gradient) <= 1e-5):
+        # 更新theta
+        theta = theta - alpha * gradient
+        gradient = gradient_function(theta, X, y)
+    return theta
+
+optimal = gradient_descent(X, y, alpha)
+print('optimal:', optimal)
+print('error function:', error_function(optimal, X, y)[0,0])
+
+x_v = np.linspace(1, 21, 1000)
+# 拟合直线
+y_v = optimal[0][0] + optimal[1][0]*x_v
+
+plt.scatter(X1.reshape(1, -1),y.reshape(1,-1),)
+plt.plot(x_v, y_v, color = "r")
+plt.savefig("GD.png", dpi = 600)
+plt.show()
+```
+
+效果：
+
+<center>
+   <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191219150937.png"/> 
+</center>
 
 
 
