@@ -111,6 +111,8 @@ $$
 $$
 \frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1..., \theta_n)
 $$
+
+
 2）用步长乘以损失函数的梯度，得到当前位置下降的距离，即 $\alpha\frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1..., \theta_n)$ 对应于前面登山例子中的某一步。
 
 3）确定是否所有的  $\theta_i$  , 梯度下降的距离都小于 $ε$ , 如果小于 $ε$ 则算法终止，当前所有的$θ_i(i=0,1,...n)$ 即为最终结果。否则进入步骤4.
@@ -121,3 +123,37 @@ $$
 $$
 \theta_i = \theta_i - \alpha\frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1..., \theta_n)
 $$
+
+
+下面用线性回归的例子来具体描述梯度下降。假设我们的样本是
+
+$(x_1^{(0)}, x_2^{(0)}, ...x_n^{(0)}, y_0), (x_1^{(1)}, x_2^{(1)}, ...x_n^{(1)},y_1), ... (x_1^{(m)}, x_2^{(m)}, ...x_n^{(m)}, y_m)$  ,损失函数如前面先决条件所述：
+
+
+$$
+J(\theta_0, \theta_1..., \theta_n) = \frac{1}{2m}\sum\limits_{j=0}^{m}(h_\theta(x_0^{(j)}, x_1^{(j)}, ...x_n^{(j)})- y_j)^2
+$$
+
+
+则在算法过程步骤1中对于$θ_i$  的偏导数计算如下：
+
+
+$$
+\frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1..., \theta_n)= \frac{1}{m}\sum\limits_{j=0}^{m}(h_\theta(x_0^{(j)}, x_1^{(j)}, ...x_n^{(j)}) - y_j)x_i^{(j)}
+$$
+由于样本中没有 $x_0$上式中令所有的 $x_0^{j}$ 为1.
+
+步骤4中$θ_i$ 的更新表达式如下：
+
+
+$$
+\theta_i = \theta_i - \alpha\frac{1}{m}\sum\limits_{j=0}^{m}(h_\theta(x_0^{(j)}, x_1^{(j)}, ...x_n^{j}) - y_j)x_i^{(j)}
+$$
+
+
+从这个例子可以看出当前点的梯度方向是由所有的样本决定的，加 $\frac{1}{m}$ 是为了好理解。由于步长也为常数，他们的乘机也为常数，所以这里 $\alpha\frac{1}{m}$ 可以用一个常数表示。
+
+
+
+#### 3.3.2 梯度下降法的矩阵方式描述
+
