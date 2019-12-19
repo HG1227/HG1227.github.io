@@ -141,6 +141,8 @@ $$
 $$
 \frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1..., \theta_n)= \frac{1}{m}\sum\limits_{j=0}^{m}(h_\theta(x_0^{(j)}, x_1^{(j)}, ...x_n^{(j)}) - y_j)x_i^{(j)}
 $$
+
+
 由于样本中没有 $x_0$上式中令所有的 $x_0^{j}$ 为1.
 
 步骤4中$θ_i$ 的更新表达式如下：
