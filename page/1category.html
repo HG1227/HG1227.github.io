@@ -6,6 +6,10 @@ icon: th-list
 type: page
 ---
 
+<style type="text/css"> 
+.text{text-indent:3.5em;}
+</style> 
+
 
 <div class="page clearfix">
     <div class="left">
@@ -24,7 +28,12 @@ type: page
                             <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
                             {% include category.html %}
-                            {% include tag.html %}
+							
+							
+							<div class="text">                                       
+								{% include tag.html %} 
+							</div> 
+
                         </li>
                         {% endif %}
                     {% endfor %}
