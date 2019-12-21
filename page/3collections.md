@@ -26,12 +26,12 @@ type: page
 
 <table width="600"  border="1">
         <tr>         
-            <td>星期二</td>
-            <td>星期三</td>
+            <td align="center">星期二</td>
+            <td align="center">星期三</td>
         </tr>
         <tr>           
-            <td>张明</td>
-            <td>王平</td>
+            <td align="center">张明</td>
+            <td align="center">王平</td>
         </tr>
 </table>
 
