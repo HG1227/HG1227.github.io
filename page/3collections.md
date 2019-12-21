@@ -12,11 +12,22 @@ type: page
 
 ## 📝 可视化
 
-[**matplotlib**](https://hg1227.github.io/matplotlib/) 
+[**matplotlib**](https://hg1227.github.io/matplotlib/)  
 
 ## 📰 blogs
 
-[刘建平Pinard](https://www.cnblogs.com/pinard/)  \| [JerryLead](https://www.cnblogs.com/jerrylead/) 
+<table width="800"  >
+        <tr>           
+           <td align="center" width="30%"><a href="https://www.cnblogs.com/pinard/">刘建平Pinard</a> </td>
+           <td align="left" width="70%"> 数学统计学，数据挖掘，机器学习   </td>
+        </tr>
+       <tr>           
+           <td align="center" width="30%"><a href="https://www.cnblogs.com/jerrylead/">JerryLead </a> </td>
+           <td align="left" width="70%"> 数学统计学，机器学习   </td>
+        </tr>
+</table>
+
+
 
 ## 📖 电子书 
 
@@ -48,8 +59,16 @@ type: page
         </tr>
 </table>
 
+## ⚒ Chrome 插件
 
-## GitBook 及其插件
+<table width="800"  >
+        <tr>           
+           <td align="center" width="30%"><a href="https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc"> Octotree </a> </td>
+           <td align="left" width="70%"> 浏览Github代码的时候，界面如 IDE 一样 </td>
+        </tr>
+</table>
+
+## ⚒ GitBook 及其插件
 
 <table width="800"  >
         <tr>           
@@ -59,13 +78,6 @@ type: page
 </table>
 
 
-
-## Chrome 插件
-- [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) ：Code tree for GitHub and GitLab
-
-* [Chrome扩展及应用开发 -图灵电子书](http://www.ituring.com.cn/minibook/950)
-
-* [有哪些鲜为人知却非常有意思、好用的 Chrome 扩展？ -知乎](https://www.zhihu.com/question/23228162#answer-28057391) 
 
 
 
