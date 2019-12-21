@@ -12,6 +12,8 @@ type: page
 
 ## 📝 可视化
 
+<a href="https://tinypng.com/" target="_blank">tiny png</a>  \| <a href="https://tinypng.com/" target="_blank">tiny png</a> 
+
 [**matplotlib**](https://hg1227.github.io/matplotlib/)  
 
 ## 📰 blogs
@@ -59,10 +61,6 @@ type: page
         </tr>
         <tr>           
            <td align="center" width="30%"><a href="https://hg1227.github.io/2019/12/07/%E6%95%B4%E7%90%86%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B7%A5%E5%85%B7/" target="_blank">icon 、image 网站</a> </td>
-           <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
-        </tr>
-        <tr>           
-           <td align="center" width="30%">  <a href="javascript:void(0);" onclick="window.open('http://www.baidu.com','_blank');" target="_blank">百度</a></td>
            <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
         </tr>
 </table>
