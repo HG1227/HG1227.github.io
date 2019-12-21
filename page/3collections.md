@@ -62,7 +62,7 @@ type: page
            <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
         </tr>
         <tr>           
-           <td align="center" width="30%"><a href="javascript:void(0);" onclick="window.open('http://www.baidu.com','_self');" target="_blank">百度</a></td>
+           <td align="center" width="30%"><a href="javascript:void(0);" onclick="window.open('http://www.baidu.com','_blank');" target="_blank">百度</a></td>
            <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
         </tr>
 </table>
