@@ -223,6 +223,22 @@ HTML 表格有两类单元格：
 
 
 
+## HTML 表格添加超链接
+
+单元格内添加一个 `a` 标签 。
+
+```html
+<table width="800"  >
+        <tr>           
+           <td align="center" width="30%"> <a href="https://tinypng.com/" target="_blank">tiny png</a> </td>
+           <td align="left" width="70%"> 用于压缩 png 或 jpg 的在线工具 </td>
+        </tr>
+
+</table>
+```
+
+
+
 ## HTML 超链接打开新窗口
 
 TARGET属性：TARGET是链接标签的属性，它的作用就是指定目标窗口，TARGET有以下几个值：

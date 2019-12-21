@@ -35,12 +35,11 @@ type: page
 
 中文
 
-[鸠摩搜书 ](https://www.jiumodiary.com/)  \| [搬书匠](http://www.banshujiang.cn/)  \| [1024EBook](http://www.1024ebook.com/)   \|  [精品 IT 资源分享](https://codingpy.com/)  \| [极客图书大全](https://jikbook.com/)  
+<a href="https://www.jiumodiary.com/" target="_blank">鸠摩搜书</a>  \| <a href="http://www.banshujiang.cn/" target="_blank">搬书匠</a>  \| <a href="http://www.1024ebook.com/" target="_blank">1024EBook</a> \| <a href="https://codingpy.com/" target="_blank">精品 IT 资源分享</a> \| <a href="https://jikbook.com/" target="_blank">极客图书大全</a>  
+
 
 英文
-
- [ZLibrar](https://b-ok.cc/)  \| [All IT eBook](http://www.allitebooks.com/) \| [IT eBooks](http://it-ebooks.info/) 
-
+<a href="https://b-ok.cc/" target="_blank">ZLibrar</a>  \| <a href="http://www.allitebooks.com/" target="_blank">All IT eBook</a>  \| <a href="http://it-ebooks.info/" target="_blank">IT eBooks</a>
 
 
 
