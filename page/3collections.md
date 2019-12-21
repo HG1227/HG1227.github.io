@@ -27,7 +27,7 @@ type: page
 
 
 
-## ⚒  工具
+## ⚒  工具 & 软件
 
 <table width="800"  >
         <tr>           
@@ -48,23 +48,17 @@ type: page
         </tr>
 </table>
 
-- [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12) 
-
-* [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
-
-- [在线正则表达式匹配](https://regex101.com/)
-- [http://regexr.com/](http://regexr.com/) ：这个功能更强 大一点，能清 楚的区分出贪婪和懒惰正则。
-- [google fonts](https://fonts.google.com/) 
-- 菜单图标示例 : 1. [Font Awesome](https://www.bootcss.com/p/font-awesome/) 2. [Font Awesome](http://www.fontawesome.cn/) 
-
-
-
-<i class="icon-weibo"></i> mm
-
 
 ## GitBook 及其插件
 
-* [Gitbook 的使用和常用插件 -赵达](http://zhaoda.net/2015/11/09/gitbook-plugins/) 
+<table width="800"  >
+        <tr>           
+           <td align="center" width="30%"><a href="https://zhaoda.net/2015/11/09/gitbook-plugins/">Gitbook 常用插件</a> </td>
+           <td align="left" width="70%"> Gitbook 的使用和常用插件 -赵达 </td>
+        </tr>
+</table>
+
+
 
 ## Chrome 插件
 - [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) ：Code tree for GitHub and GitLab
