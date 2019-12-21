@@ -32,7 +32,7 @@ type: page
 <table width="800"  >
         <tr>           
            <td align="center" width="50%"><a href="https://tinypng.com/">tiny png</a> </td>
-           <td align="center" width="50%"> 用于压缩 png 或 jpg 的在线工具 </td>
+           <td align="left" width="50%"> 用于压缩 png 或 jpg 的在线工具 </td>
         </tr>
 </table>
 
