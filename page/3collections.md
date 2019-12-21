@@ -36,7 +36,7 @@ type: page
         </tr>
         <tr>           
             <td align="center">[tiny png](https://tinypng.com/) </td>
-            <td align="center">用于压缩 png 或 jpg 的在线工具</td>
+            <tr onclick="window.open('http://www.baidu.com');">
         </tr>
 </table>
 
