@@ -24,6 +24,20 @@ type: page
 
 
 
+<table >
+        <tr>            
+            <td>星期一</td>
+            <td>星期二</td>
+            <td>星期三</td>
+        </tr>
+        <tr>
+            <td>李强</td>
+            <td>张明</td>
+            <td>王平</td>
+        </tr>
+ </table>
+
+
 ## ⚒  工具
 
 - [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
