@@ -24,7 +24,7 @@ type: page
 
 
 
-<table width="400">
+<table width="600">
         <tr>            
             <td>星期一</td>
             <td>星期二</td>
