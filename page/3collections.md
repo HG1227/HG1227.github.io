@@ -29,7 +29,7 @@ type: page
 
 ## ⚒  工具
 
-<table width="600"  border="1">
+<table width="800"  border="1">
         <tr>           
            <td align="center"><a href="https://tinypng.com/">tiny png</a> </td>
             <td align="center"> 用于压缩 png 或 jpg 的在线工具 </td>
