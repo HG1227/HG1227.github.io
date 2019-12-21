@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+
+## ☀可视化
+
+[**matplotlib**](https://hg1227.github.io/matplotlib/) 
+
 ## 🚀 工具
 
 - [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
