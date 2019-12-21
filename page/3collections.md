@@ -30,13 +30,9 @@ type: page
 ## ⚒  工具
 
 <table width="600"  border="1">
-        <tr>         
-            <td align="center">[Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)</td>
-            <td align="center">星期三</td>
-        </tr>
         <tr>           
             <td align="center">[tiny png](https://tinypng.com/) </td>
-            <tr onclick="window.open('http://www.baidu.com');">
+            <td align="center"><a href="https://tinypng.com/">超链接</a> </td>
         </tr>
 </table>
 
