@@ -18,11 +18,11 @@ type: page
 
 <table width="800"  >
         <tr>           
-           <td align="center" width="30%"><a href="https://www.cnblogs.com/pinard/">刘建平Pinard</a> </td>
+           <td align="center" width="30%">  <a href="javascript:void(0);" onclick="window.open('https://www.cnblogs.com/pinard/','_blank');" target="_blank">刘建平Pinard</a></td>
            <td align="left" width="70%"> 数学统计学，数据挖掘，机器学习   </td>
         </tr>
        <tr>           
-           <td align="center" width="30%"><a href="https://www.cnblogs.com/jerrylead/">JerryLead </a> </td>
+           <td align="center" width="30%">  <a href="javascript:void(0);" onclick="window.open('https://www.cnblogs.com/jerrylead/','_blank');" target="_blank">JerryLead </a></td>           
            <td align="left" width="70%"> 数学统计学，机器学习   </td>
         </tr>
 </table>
@@ -62,7 +62,7 @@ type: page
            <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
         </tr>
         <tr>           
-           <td align="center" width="30%"><a href="javascript:void(0);" onclick="window.open('http://www.baidu.com','_blank');" target="_blank">百度</a></td>
+           <td align="center" width="30%">  <a href="javascript:void(0);" onclick="window.open('http://www.baidu.com','_blank');" target="_blank">百度</a></td>
            <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
         </tr>
 </table>
