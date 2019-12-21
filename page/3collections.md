@@ -24,19 +24,21 @@ type: page
 
 
 
-<table width="600"  border="1">
-        <tr>         
-            <td align="center">星期二</td>
-            <td align="center">星期三</td>
-        </tr>
-        <tr>           
-            <td align="center">张明</td>
-            <td align="center">王平</td>
-        </tr>
-</table>
+
 
 
 ## ⚒  工具
+
+<table width="600"  border="1">
+        <tr>         
+            <td align="center">[Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)</td>
+            <td align="center">星期三</td>
+        </tr>
+        <tr>           
+            <td align="center">[tiny png](https://tinypng.com/) </td>
+            <td align="center">用于压缩 png 或 jpg 的在线工具</td>
+        </tr>
+</table>
 
 - [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
 - [tiny png](https://tinypng.com/)         用于压缩 png 或 jpg 的在线工具
