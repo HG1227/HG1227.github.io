@@ -34,6 +34,14 @@ type: page
            <td align="center" width="30%"><a href="https://tinypng.com/">tiny png</a> </td>
            <td align="left" width="70%"> 用于压缩 png 或 jpg 的在线工具 </td>
         </tr>
+       <tr>           
+           <td align="center" width="30%"><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 图床</a> </td>
+           <td align="left" width="70%"> 图片上传+管理新体验 </td>
+        </tr> 
+        <tr>           
+           <td align="center" width="30%"><a href="https://fonts.google.com/">google fonts</a> </td>
+           <td align="left" width="70%"> google 字体库 </td>
+        </tr>
 </table>
 
 - [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
