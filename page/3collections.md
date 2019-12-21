@@ -31,8 +31,8 @@ type: page
 
 <table width="600"  border="1">
         <tr>           
-            <td align="center">[tiny png](https://tinypng.com/) </td>
-            <td align="center"><a href="https://tinypng.com/">超链接</a> </td>
+           <td align="center"><a href="https://tinypng.com/">tiny png</a> </td>
+            <td align="center"> 用于压缩 png 或 jpg 的在线工具 </td>
         </tr>
 </table>
 
