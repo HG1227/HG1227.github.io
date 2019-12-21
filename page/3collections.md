@@ -10,7 +10,7 @@ type: page
 {:toc}
 
 
-## ☀ 可视化
+## 📝 可视化
 
 [**matplotlib**](https://hg1227.github.io/matplotlib/) 
 
@@ -18,9 +18,9 @@ type: page
 
 [刘建平Pinard](https://www.cnblogs.com/pinard/)  \| [JerryLead](https://www.cnblogs.com/jerrylead/) 
 
-icon-hammer 
+## 📖 电子书 
 
-[鸠摩搜书 ](https://www.jiumodiary.com/)  
+[鸠摩搜书 ](https://www.jiumodiary.com/)  \| [搬书匠](http://www.banshujiang.cn/)  \| [1024EBook](http://www.1024ebook.com/) 
 
 
 
