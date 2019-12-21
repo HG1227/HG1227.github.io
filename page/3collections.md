@@ -12,9 +12,9 @@ type: page
 
 ## 📝 可视化
 
-<a href="https://tinypng.com/" target="_blank">tiny png</a>  \| <a href="https://tinypng.com/" target="_blank">tiny png</a> 
+<a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a>
 
-[**matplotlib**](https://hg1227.github.io/matplotlib/)  
+
 
 ## 📰 blogs
 
