@@ -31,9 +31,13 @@ type: page
 
 ## 📖 电子书 
 
-[鸠摩搜书 ](https://www.jiumodiary.com/)  \| [搬书匠](http://www.banshujiang.cn/)  \| [1024EBook](http://www.1024ebook.com/) 
+中文
 
+[鸠摩搜书 ](https://www.jiumodiary.com/)  \| [搬书匠](http://www.banshujiang.cn/)  \| [1024EBook](http://www.1024ebook.com/)   \|  [精品 IT 资源分享](https://codingpy.com/)  \| [极客图书大全](https://jikbook.com/)  
 
+英文
+
+ [ZLibrar](https://b-ok.cc/)  \| [All IT eBook](http://www.allitebooks.com/) \| [IT eBooks](http://it-ebooks.info/) 
 
 
 
