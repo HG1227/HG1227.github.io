@@ -53,7 +53,7 @@ type: page
 * [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
 
 - [在线正则表达式匹配](https://regex101.com/)
-- [http://regexr.com/](http://regexr.com/) ：这个功能更强 大一点，能清楚的区分出贪婪和懒惰正则。
+- [http://regexr.com/](http://regexr.com/) ：这个功能更强 大一点，能清 楚的区分出贪婪和懒惰正则。
 - [google fonts](https://fonts.google.com/) 
 - 菜单图标示例 : 1. [Font Awesome](https://www.bootcss.com/p/font-awesome/) 2. [Font Awesome](http://www.fontawesome.cn/) 
 
