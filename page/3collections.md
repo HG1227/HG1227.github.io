@@ -48,11 +48,7 @@ type: page
         </tr>
 </table>
 
-- [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
-- [tiny png](https://tinypng.com/)         用于压缩 png 或 jpg 的在线工具
-- [icon image 网站](https://hg1227.github.io/2019/12/07/整理的一些工具/)
-
-* [图床 ](https://sm.ms/) 
+- [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12) 
 
 * [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
 
@@ -63,6 +59,7 @@ type: page
 
 
 
+<i class="icon-weibo"></i> 
 
 
 ## GitBook 及其插件
