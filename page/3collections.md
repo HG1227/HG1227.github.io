@@ -10,13 +10,19 @@ type: page
 {:toc}
 
 
-## ☀可视化
+## ☀ 可视化
 
 [**matplotlib**](https://hg1227.github.io/matplotlib/) 
 
 ## 📰 blogs
 
 [刘建平Pinard](https://www.cnblogs.com/pinard/)  \| [JerryLead](https://www.cnblogs.com/jerrylead/) 
+
+icon-hammer 
+
+[鸠摩搜书 ](https://www.jiumodiary.com/)  
+
+
 
 ## ⚒  工具
 
@@ -33,7 +39,7 @@ type: page
 - [google fonts](https://fonts.google.com/) 
 - 菜单图标示例 : 1. [Font Awesome](https://www.bootcss.com/p/font-awesome/) 2. [Font Awesome](http://www.fontawesome.cn/) 
 
-## 
+
 
 
 
@@ -47,6 +53,8 @@ type: page
 * [Chrome扩展及应用开发 -图灵电子书](http://www.ituring.com.cn/minibook/950)
 
 * [有哪些鲜为人知却非常有意思、好用的 Chrome 扩展？ -知乎](https://www.zhihu.com/question/23228162#answer-28057391) 
+
+
 
 
 
