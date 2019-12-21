@@ -46,7 +46,7 @@ type: page
 
 <table width="800"  >
         <tr>           
-           <td align="center" width="30%"><a href="https://tinypng.com/">tiny png</a> </td>
+           <td align="center" width="30%"><a href="https://tinypng.com/" target="_blank">tiny png</a> </td>
            <td align="left" width="70%"> 用于压缩 png 或 jpg 的在线工具 </td>
         </tr>
        <tr>           
