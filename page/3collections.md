@@ -18,7 +18,7 @@ type: page
 
 ## 📰 blogs
 
-<table width="800"  >
+<table width="100%"  >
         <tr>           
            <td align="center" width="30%">  <a href="javascript:void(0);" onclick="window.open('https://www.cnblogs.com/pinard/','_blank');" target="_blank">刘建平Pinard</a></td>
            <td align="left" width="70%"> 数学统计学，数据挖掘，机器学习   </td>
