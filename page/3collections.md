@@ -47,7 +47,7 @@ type: page
 
 ## ⚒  工具 & 软件
 
-<table width="800"  >
+<table width="100%"  >
         <tr>           
            <td align="center" width="30%"><a href="https://tinypng.com/" target="_blank">tiny png</a> </td>
            <td align="left" width="70%"> 用于压缩 png 或 jpg 的在线工具 </td>
@@ -68,7 +68,7 @@ type: page
 
 ## ⚒ Chrome 插件
 
-<table width="800"  >
+<table width="100%"  >
         <tr>           
            <td align="center" width="30%"><a href="https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank"> Octotree </a> </td>
            <td align="left" width="70%"> 浏览Github代码的时候，界面如 IDE 一样 </td>
@@ -77,7 +77,7 @@ type: page
 
 ## ⚒ GitBook 及其插件
 
-<table width="800"  >
+<table width="100%"  >
         <tr>           
            <td align="center" width="30%"><a href="https://zhaoda.net/2015/11/09/gitbook-plugins/" target="_blank">Gitbook 常用插件</a> </td>
            <td align="left" width="70%"> Gitbook 的使用和常用插件 -赵达 </td>
