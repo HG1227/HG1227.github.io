@@ -3,7 +3,7 @@ layout: post
 title:  梯度下降（Gradient Descent）
 date:   2019-12-19
 categories: Machine-learning
-tags: Gradient-Descen    
+tags: Gradient-Descen    ML
 ---
 * content
 {:toc}
