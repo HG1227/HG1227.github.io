@@ -41,7 +41,7 @@ type: page
 
 英文
 
-<a href="https://b-ok.cc/" target="_blank">ZLibrar</a>   \|  <a href="http://www.allitebooks.com/" target="_blank">All IT eBook</a>   \|  <a href="http://it-ebooks.info/" target="_blank">IT eBooks</a>
+<a href="https://b-ok.cc/" target="_blank">ZLibrar</a>   \|  <a href="http://en.bookfi.net/s/?q=python&t=0" target="_blank">BookFI </a> \|  <a href="http://www.allitebooks.com/" target="_blank">All IT eBook</a>   \|  <a href="http://it-ebooks.info/" target="_blank">IT eBooks</a>
 
 
 
