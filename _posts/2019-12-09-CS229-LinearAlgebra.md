@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title:  机器学习课程复习材料-线性代数
 date:   2019-12-09
@@ -31,6 +32,9 @@ tags: LinearAlgebra  math
 $$
 4x_1 − 5x_2 = −13
 $$
+
+
+
 $$
 −2x_1 + 3x_2 = 9
 $$
@@ -399,7 +403,7 @@ $$
 
 1. 对于所有的 $x \in \mathbb{R}^ {n}$, $f(x) \geq 0 $(非负).
 2. 当且仅当$x = 0$ 时，$f(x) = 0$ (明确性).
-3. 对于所有$x \in \mathbb{R}^ {n}$,$t\in \mathbb{R}$，则 $f(tx) = \left| t \right|f(x)$ (正齐次性).
+3. 对于所有$x \in \mathbb{R}^ {n}$,$t\in \mathbb{R}$，则 $f(tx) = \| t \|f(x)$ (正齐次性).
 4. 对于所有 $x,y \in \mathbb{R}^ {n}$, $f(x + y) \leq f(x) + f(y)$ (三角不等式)
 
 其他范数的例子是$\ell_1$范数:
@@ -432,8 +436,9 @@ $$
 \|A\|_{F}=\sqrt{\sum_{i=1}^{m} \sum_{j=1}^{n} A_{i j}^{2}}=\sqrt{\operatorname{tr}\left(A^{T} A\right)}
 $$
 
-
 许多其他更多的范数，但它们超出了这个复习材料的范围。
+
+<br>
 
 #### 3.6 线性相关性和秩
 
@@ -462,6 +467,8 @@ $$
 -   对于  $A  \in \mathbb{R}^{m \times n}$,$B  \in \mathbb{R}^{n \times p}$ ,$\text{rank}(AB) \leq \text{min} ( \text{rank}(A), \text{rank}(B))$
 -   对于  $A,B \in \mathbb{R}^{m \times n}$，$\text{rank}(A + B) \leq \text{rank}(A) + \text{rank}(B)$
 
+<br>
+
 #### 3.7 方阵的逆
 
 方阵$A  \in \mathbb{R}^{n \times n}$的倒数表示为$A^{-1}$，并且是这样的独特矩阵:
@@ -481,33 +488,50 @@ $$
 -   $(A^{-1})^{T} =(A^{T})^{-1} $因此，该矩阵通常表示为$A^{-T}$。
 作为如何使用逆的示例，考虑线性方程组，$Ax = b$，其中$A  \in \mathbb{R}^{n \times n}$，$x,b\in \mathbb{R}$， 如果$A$是非奇异的（即可逆的），那么$x = A^{-1}b$。 （如果$A  \in \mathbb{R}^{m \times n}$不是方阵，这公式还有用吗？）
 
+<br>
+
 #### 3.8 正交阵
 
 如果 $x^Ty=0$，则两个向量$x,y\in \mathbb{R}^{n}$ 是**正交**的。如果$\|x\|_2=1$，则向量$x\in \mathbb{R}^{n}$ 被归一化。如果一个方阵$U\in \mathbb{R}^{n \times n}$的所有列彼此正交并被归一化（这些列然后被称为正交），则方阵$U$是正交阵（注意在讨论向量时的意义不一样）。
 
 它可以从正交性和正态性的定义中得出:
+
+
 $$
 U^ TU = I = U U^T
 $$
 
+
+
 换句话说，正交矩阵的逆是其转置。 注意，如果$U$不是方阵 :即，$U\in \mathbb{R}^{m \times n}$，$n <m$  ，但其列仍然是正交的，则$U^TU = I$，但是$UU^T \neq I$。我们通常只使用术语"正交"来描述先前的情况 ，其中$U$是方阵。
 正交矩阵的另一个好的特性是在具有正交矩阵的向量上操作不会改变其欧几里德范数，即:
+
+
 $$
 \|U x\|_{2}=\|x\|_{2}
 $$
+
+
 对于任何 $x\in \mathbb{R}$ , $U\in \mathbb{R}^{n}$是正交的。
+
+<br>
 
 #### 3.9 矩阵的值域和零空间
 
 一组向量$\{x_{1}, \ldots x_{n}\}$是可以表示为$\{x_{1}, \ldots x_{n}\}$的线性组合的所有向量的集合。 即：
+
+
 $$
 \operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\left\{v : v=\sum_{i=1}^{n} \alpha_{i} x_{i}, \quad \alpha_{i} \in \mathbb{R}\right\}
 $$
-可以证明，如果$\{x_{1}, \ldots x_{n}\}$是一组$n$个线性无关的向量，其中每个$x_i \in \mathbb{R}^{n}$，则$\text{span}(\{x_{1}, \ldots x_{n}\})=\mathbb{R}^{n}$。 换句话说，任何向量$v\in \mathbb{R}^{n}$都可以写成$x_1$到$x_n$的线性组合。
+
+
+可以证明，如果$\{x_{1}, \ldots x_{n}\}$是一组$n$个线性无关的向量，其中每个$x_i \in \mathbb{R}^{n}$，则 $\operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\mathbb{R}^{n}$ 。 换句话说，任何向量$v\in \mathbb{R}^{n}$ 都可以写成$x_1$ 到$x_n$ 的线性组合。
 
 向量$y\in \mathbb{R}^{m}$投影到$\{x_{1}, \ldots x_{n}\}$（这里我们假设$x_i \in \mathbb{R}^{m}$）得到向量$v \in \operatorname{span}(\{x_{1}, \ldots, x_{n}\})$，由欧几里德范数$\|v  -  y\|_2$可以得知，这样$v$尽可能接近$y$。
 
-我们将投影表示为 $\operatorname{Proj}\left(y ;\left\{x_{1}, \ldots x_{n}\right\}\right)$ ，并且可以将其正式定义为:
+我们将投影表示为 $\operatorname{Proj}\left(y ;\left\{x_{1}, \ldots x_{n}\right\}\right)$  ，并且可以将其正式定义为:
+
 
 
 $$
@@ -515,8 +539,8 @@ $$
 $$
 
 
-矩阵$A\in \mathbb{R}^{m \times n}$的值域（有时也称为列空间），表示为$\mathcal{R}(A)$，是$A$列的跨度。换句话说，
 
+矩阵$A\in \mathbb{R}^{m \times n}$的值域（有时也称为列空间），表示为$\mathcal{R}(A)$，是$A$列的跨度。换句话说，
 
 $$
 \mathcal{R}(A)=\left\{v \in \mathbb{R}^{m} : v=A x, x \in \mathbb{R}^{n}\right\}
@@ -559,9 +583,11 @@ $$
 
 换句话说，$\mathcal{R}(A^T)$和 $\mathcal{N}(A)$ 是不相交的子集，它们一起跨越$\mathbb{R}^{n}$的整个空间。 这种类型的集合称为**正交补**，我们用$\mathcal{R}(A^T)= \mathcal{N}(A)^{\perp}$表示。
 
+<br>
+
 #### 3.10 行列式
 
-一个方阵$A  \in \mathbb{R}^{n \times n}$的行列式是函数$\text {det}$：$\mathbb{R}^{n \times n} \rightarrow \mathbb{R}^{n} $，并且表示为 $\left| A \right|$ 。 或者$\text{det} A$（有点像迹运算符，我们通常省略括号）。 从代数的角度来说，我们可以写出一个关于$A$行列式的显式公式。 因此，我们首先提供行列式的几何解释，然后探讨它的一些特定的代数性质。
+一个方阵$A  \in \mathbb{R}^{n \times n}$的行列式是函数$\text {det}$：$\mathbb{R}^{n \times n} \rightarrow \mathbb{R}^{n} $，并且表示为 $\| A \|$ 。 或者$\text{det} A$（有点像迹运算符，我们通常省略括号）。 从代数的角度来说，我们可以写出一个关于$A$行列式的显式公式。 因此，我们首先提供行列式的几何解释，然后探讨它的一些特定的代数性质。
 
 给定一个矩阵：
 
@@ -598,7 +624,7 @@ a_{1}=\left[\begin{array}{l}{1} \\ {3}\end{array}\right] \quad a_{2}=\left[\begi
 $$
 
 
-对应于这些行对应的集合$S$如图1所示。对于二维矩阵，$S$通常具有平行四边形的形状。 在我们的例子中，行列式的值是$\left| A \right| = -7$（可以使用本节后面显示的公式计算），因此平行四边形的面积为7。（请自己验证！）
+对应于这些行对应的集合$S$如图1所示。对于二维矩阵，$S$ 通常具有平行四边形的形状。 在我们的例子中，行列式的值是$\| A \| = -7$（可以使用本节后面显示的公式计算），因此平行四边形的面积为7。（请自己验证！）
 
 在三维中，集合$S$对应于一个称为平行六面体的对象（一个有倾斜边的三维框，这样每个面都有一个平行四边形）。行定义$S$的$3×3$矩阵S的行列式的绝对值给出了平行六面体的三维体积。在更高的维度中，集合$S$是一个称为$n$维平行切的对象。
 
@@ -607,11 +633,11 @@ $$
 </center>
 ​    
 
-图1：（4）中给出的$2×2$矩阵$A$的行列式的图示。 这里，$a_1$和$a_2$是对应于$A$行的向量，并且集合$S$对应于阴影区域（即，平行四边形）。 这个行列式的绝对值，$\left| \text{det} A \right| = 7$ ，即平行四边形的面积。
+图1：（4）中给出的$2×2$矩阵$A$的行列式的图示。 这里，$a_1$和$a_2$是对应于$A$行的向量，并且集合$S$对应于阴影区域（即，平行四边形）。 这个行列式的绝对值，$\| \text{det} A \| = 7$ ，即平行四边形的面积。
 
 在代数上，行列式满足以下三个属性（所有其他属性都遵循这些属性，包括通用公式）：
 
-1. 恒等式的行列式为1, $\left| I \right|= 1$ （几何上，单位超立方体的体积为1）。
+1. 恒等式的行列式为1, $\| I \|= 1$ （几何上，单位超立方体的体积为1）。
 
 2. 给定一个矩阵 $A  \in \mathbb{R}^{n \times n}$, 如果我们将$A$中的一行乘上一个标量$t  \in \mathbb{R}$，那么新矩阵的行列式是$t\left| A \right|$ 
 
@@ -623,7 +649,7 @@ $$
 
 几何上，将集合$S$的一个边乘以系数$t$，体积也会增加一个系数$t$。
 
-3. 如果我们交换任意两行在$a_i^T$和$a_j^T$，那么新矩阵的行列式是$-\left| A \right|$，例如：
+3. 如果我们交换任意两行在$a_i^T$和$a_j^T$，那么新矩阵的行列式是$-\| A \|$，例如：
 
    
 $$
@@ -635,16 +661,21 @@ $$
 
 从上述三个属性中得出的几个属性包括：
 
--   对于 $A  \in \mathbb{R}^{n \times n}$, $\left| A \right| = \left| A^T \right|$
--   对于 $A,B \in \mathbb{R}^{n \times n}$, $\left| AB \right|= \left| A \right|\left| B \right|$
--   对于 $A  \in \mathbb{R}^{n \times n}$, 有且只有当$A$是奇异的（比如不可逆） ，则：$\left| A \right|= 0$
--   对于 $A  \in \mathbb{R}^{n \times n}$ 同时，$A$为非奇异的，则：$\left| A ^{−1}\right| = 1/\left| A \right|$
+-   对于 $A  \in \mathbb{R}^{n \times n}$, $\| A \| = \| A^T \|$
+-   对于 $A,B \in \mathbb{R}^{n \times n}$, $\| AB \|= \| A \|\| B \|$
+-   对于 $A  \in \mathbb{R}^{n \times n}$, 有且只有当$A$是奇异的（比如不可逆） ，则：$\| A \|= 0$
+-   对于 $A  \in \mathbb{R}^{n \times n}$ 同时，$A$为非奇异的，则：$\| A ^{−1}\| = 1/\| A \|$
 
 在给出行列式的一般定义之前，我们定义，对于$A  \in \mathbb{R}^{n \times n}$，$A_{\backslash i, \backslash j}\in \mathbb{R}^{(n-1) \times (n-1)}$是由于删除第$i$行和第$j$列而产生的矩阵。 行列式的一般（递归）公式是：
+
+
 $$
 \begin{aligned}|A| &=\sum_{i=1}^{n}(-1)^{i+j} a_{i j}\left|A_{\backslash i, \backslash j}\right| \quad(\text { for any } j \in 1, \ldots, n) \\ &=\sum_{j=1}^{n}(-1)^{i+j} a_{i j}\left|A_{\backslash i, \backslash j}\right| \quad(\text { for any } i \in 1, \ldots, n) \end{aligned}
 $$
+
+
 对于 $A  \in \mathbb{R}^{1 \times 1}$，初始情况为$\left| A \right|= a_{11}$。如果我们把这个公式完全展开为 $A  \in \mathbb{R}^{n \times n}$，就等于$n!$（$n$阶乘）不同的项。因此，对于大于$3×3$的矩阵，我们几乎没有明确地写出完整的行列式方程。然而，$3×3$大小的矩阵的行列式方程是相当常见的，建议好好地了解它们：
+
 $$
 \left|\left[a_{11}\right]\right|=a_{11}
 $$
@@ -656,27 +687,45 @@ $$
 $$
 \left|\left[\begin{array}{l}{a_{11}} & {a_{12}} & {a_{13}} \\ {a_{21}} & {a_{22}} & {a_{23}} \\ {a_{31}} & {a_{32}} & {a_{33}}\end{array}\right]\right|=\quad \begin{array}{c}{a_{11} a_{22} a_{33}+a_{12} a_{23} a_{31}+a_{13} a_{21} a_{32}} \\\quad \quad {-a_{11} a_{23} a_{32}-a_{12} a_{21} a_{33}-a_{13} a_{22} a_{31}} \\ {}\end{array}
 $$
+
+
 矩阵$A  \in \mathbb{R}^{n \times n}$的经典伴随矩阵（通常称为伴随矩阵）表示为$\operatorname{adj}(A)$，并定义为：
+
+
 $$
 \operatorname{adj}(A) \in \mathbb{R}^{n \times n}, \quad(\operatorname{adj}(A))_{i j}=(-1)^{i+j}\left|A_{\backslash j, \backslash i}\right|
 $$
+
+
 （注意索引$A_{\backslash j, \backslash i}$中的变化）。可以看出，对于任何非奇异$A  \in \mathbb{R}^{n \times n}$，
+
+
 $$
 A^{-1}=\frac{1}{|A|} \operatorname{adj}(A)
 $$
+
+
 
 虽然这是一个很好的“显式”的逆矩阵公式，但我们应该注意，从数字上讲，有很多更有效的方法来计算逆矩阵。
 
 #### 3.11 二次型和半正定矩阵
 
 给定方矩阵$A  \in \mathbb{R}^{n \times n}$和向量$x \in \mathbb{R}^{n}$，标量值$x^T Ax$被称为二次型。 写得清楚些，我们可以看到：
+
+
 $$
 x^{T} A x=\sum_{i=1}^{n} x_{i}(A x)_{i}=\sum_{i=1}^{n} x_{i}\left(\sum_{j=1}^{n} A_{i j} x_{j}\right)=\sum_{i=1}^{n} \sum_{j=1}^{n} A_{i j} x_{i} x_{j}
 $$
+
+
 注意：
+
+
 $$
 x^{T} A x=\left(x^{T} A x\right)^{T}=x^{T} A^{T} x=x^{T}\left(\frac{1}{2} A+\frac{1}{2} A^{T}\right) x
 $$
+
+
 第一个等号的是因为是标量的转置与自身相等，而第二个等号是因为是我们平均两个本身相等的量。 由此，我们可以得出结论，只有$A$的对称部分有助于形成二次型。 出于这个原因，我们经常隐含地假设以二次型出现的矩阵是对称阵。
 我们给出以下定义：
 
@@ -693,13 +742,21 @@ $$
 很明显，如果$A$是正定的，那么$−A$是负定的，反之亦然。同样，如果$A$是半正定的，那么$−A$是是半负定的，反之亦然。如果果$A$是不定的，那么$−A$是也是不定的。
 
 正定矩阵和负定矩阵的一个重要性质是它们总是满秩，因此是可逆的。为了了解这是为什么，假设某个矩阵$A \in \mathbb{S}^n$不是满秩。然后，假设$A$的第$j$列可以表示为其他$n-1$列的线性组合：
+
+
 $$
 a_{j}=\sum_{i \neq j} x_{i} a_{i}
 $$
+
+
 对于某些$x_1,\cdots x_{j-1},x_{j + 1} ,\cdots ,x_n\in \mathbb{R}$。设$x_j = -1$，则：
+
+
 $$
 Ax=\sum_{i \neq j} x_{i} a_{i}=0
 $$
+
+
 但这意味着对于某些非零向量$x$，$x^T Ax = 0$，因此$A$必须既不是正定也不是负定。如果$A$是正定或负定，则必须是满秩。
 最后，有一种类型的正定矩阵经常出现，因此值得特别提及。 给定矩阵$A  \in \mathbb{R}^{m \times n}$（不一定是对称或偶数平方），矩阵$G = A^T A$（有时称为**Gram矩阵**）总是半正定的。 此外，如果$m\geq n$（同时为了方便起见，我们假设$A$是满秩），则$G = A^T A$是正定的。
 
@@ -707,20 +764,31 @@ $$
 
 给定一个方阵$A \in\mathbb{R}^{n\times n}$，我们认为在以下条件下，$\lambda \in\mathbb{C}$是$A$的**特征值**，$x\in\mathbb{C}^n$是相应的**特征向量**：
 
+
 $$
 Ax=\lambda x,x \ne 0
 $$
 
+
+
 直观地说，这个定义意味着将$A$乘以向量$x$会得到一个新的向量，该向量指向与$x$相同的方向，但按系数$\lambda$缩放。值得注意的是，对于任何特征向量$x\in\mathbb{C}^n$和标量$t\in\mathbb{C}$，$A(cx)=cAx=c\lambda x=\lambda(cx)$，$cx$也是一个特征向量。因此，当我们讨论与$\lambda$相关的**特征向量**时，我们通常假设特征向量被标准化为长度为1（这仍然会造成一些歧义，因为$x$和$−x$都是特征向量，但我们必须接受这一点）。
 
 我们可以重写上面的等式来说明$(\lambda,x)$是$A$的特征值和特征向量的组合：
+
+
 $$
 (\lambda I-A)x=0,x \ne 0
 $$
+
+
 但是$(\lambda I-A)x=0$只有当$(\lambda I-A)$有一个非空零空间时，同时$(\lambda I-A)$是奇异的，$x$才具有非零解，即：
+
+
 $$
 |(\lambda I-A)|=0
 $$
+
+
 现在，我们可以使用行列式的先前定义将表达式$|(\lambda I-A)|$扩展为$\lambda$中的（非常大的）多项式，其中，$\lambda$的度为$n$。它通常被称为矩阵$A$的特征多项式。
 
 然后我们找到这个特征多项式的$n$（可能是复数）根，并用$\lambda_1,\cdots,\lambda_n$表示。这些都是矩阵$A$的特征值，但我们注意到它们可能不明显。为了找到特征值$\lambda_i$对应的特征向量，我们只需解线性方程$(\lambda I-A)x=0$，因为$(\lambda I-A)$是奇异的，所以保证有一个非零解（但也可能有多个或无穷多个解）。
@@ -730,20 +798,26 @@ $$
 以下是特征值和特征向量的属性（所有假设在$A \in\mathbb{R}^{n\times n}$具有特征值$\lambda_1,\cdots,\lambda_n$的前提下）：
 
 - $A$的迹等于其特征值之和
+  
   $$
   \operatorname{tr} A=\sum_{i=1}^{n} \lambda_{i}
-  $$
-
+$$
+  
+  
 - $A$的行列式等于其特征值的乘积
+  
   $$
   |A|=\prod_{i=1}^{n} \lambda_{i}
-  $$
-
+$$
+  
+  
 - $A$的秩等于$A$的非零特征值的个数
   
 - 假设$A$非奇异，其特征值为$\lambda$和特征向量为$x$。那么$1/\lambda$是具有相关特征向量$x$的$A^{-1}$的特征值，即$A^{-1}x=(1/\lambda)x$。（要证明这一点，取特征向量方程，$Ax=\lambda x$，两边都左乘$A^{-1}$）
   
 - 对角阵的特征值$d=diag(d_1，\cdots,d_n)$实际上就是对角元素$d_1，\cdots,d_n$
+
+<br>
 
 #### 3.13 对称矩阵的特征值和特征向量
 
@@ -757,17 +831,29 @@ $$
 2. 存在一组特征向量$u_1，\cdots u_n$，对于所有$i$，$u_i$是具有特征值$\lambda_{i}$和$b$的特征向量。$u_1，\cdots u_n$是单位向量并且彼此正交。
 
 设$U$是包含$u_i$作为列的正交矩阵：
+
+
 $$
 U=\left[\begin{array}{cccc}{ |} & { |} & {} & { |} \\ {u_{1}} & {u_{2}} & {\cdots} & {u_{n}} \\ { |} & { |} & {} & { |}\end{array}\right]
 $$
+
+
 设$\Lambda= diag(\lambda_1,\cdots,\lambda_n)$是包含$\lambda_1,\cdots,\lambda_n$作为对角线上的元素的对角矩阵。 使用2.3节的方程（2）中的矩阵 - 矩阵向量乘法的方法，我们可以验证：
+
+
 $$
 A U=\left[\begin{array}{cccc}{ |} & { |} & {} & { |} \\ {A u_{1}} & {A u_{2}} & {\cdots} & {A u_{n}} \\ { |} & { |} & {} & { |}\end{array}\right]=\left[\begin{array}{ccc}{ |} & { |} & { |} & { |}\\ {\lambda_{1} u_{1}} & {\lambda_{2} u_{2}} & {\cdots} & {\lambda_{n} u_{n}} \\ { |} & { |} & {|} & { |}\end{array}\right]=U \operatorname{diag}\left(\lambda_{1}, \ldots, \lambda_{n}\right)=U \Lambda
 $$
+
+
 考虑到正交矩阵$U$满足$UU^T=I$，利用上面的方程，我们得到：
+
+
 $$
 A=AUU^T=U\Lambda U^T
 $$
+
+
 
 这种$A$的新的表示形式为$U\Lambda U^T$，通常称为矩阵$A$的对角化。术语对角化是这样来的：通过这种表示，我们通常可以有效地将对称矩阵$A$视为对角矩阵 , 这更容易理解。关于由特征向量$U$定义的基础， 我们将通过几个例子详细说明。
 
@@ -792,13 +878,21 @@ $$
 $$
 我们可以看到，原始空间中的左乘矩阵$A$等于左乘对角矩阵$\Lambda$相对于新的基，即仅将每个坐标缩放相应的特征值。
 在新的基上，矩阵多次相乘也变得简单多了。例如，假设$q=AAAx$。根据$A$的元素导出$q$的分析形式，使用原始的基可能是一场噩梦，但使用新的基就容易多了：
+
+
 $$
 \hat{q}=U^{T} q=U^{T} AAA x=U^{T} U \Lambda U^{T} U \Lambda U^{T} U \Lambda U^{T} x=\Lambda^{3} \hat{x}=\left[\begin{array}{c}{\lambda_{1}^{3} \hat{x}_{1}} \\ {\lambda_{2}^{3} \hat{x}_{2}} \\ {\vdots} \\ {\lambda_{n}^{3} \hat{x}_{n}}\end{array}\right]
 $$
-**“对角化”二次型**。作为直接的推论，二次型$x^TAx$也可以在新的基上简化。
+**
+
+“对角化”二次型**。作为直接的推论，二次型$x^TAx$也可以在新的基上简化。
+
+
 $$
 x^{T} A x=x^{T} U \Lambda U^{T} x=\hat{x} \Lambda \hat{x}=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2}
 $$
+
+
 (回想一下，在旧的表示法中，$x^{T} A x=\sum_{i=1, j=1}^{n} x_{i} x_{j} A_{i j}$涉及一个$n^2$项的和，而不是上面等式中的$n$项。)利用这个观点，我们还可以证明矩阵$A$的正定性完全取决于其特征值的符号：
 
 1. 如果所有的$\lambda_i>0$，则矩阵$A$正定的，因为对于任意的$\hat x \ne 0$,$x^{T} A x=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2}>0$
@@ -814,31 +908,54 @@ $$
 我们可以通过使用对角化技术来证明这一点：注意，通过公式$\|U x\|_{2}=\|x\|_{2}$推出$\|x\|_{2}=\|\hat{x}\|_{2}$，并利用公式：
 
 $x^{T} A x=x^{T} U \Lambda U^{T} x=\hat{x} \Lambda \hat{x}=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2}$，我们可以将上面那个优化问题改写为：
+
+
 $$
 \max _{\hat{x} \in \mathbb{R}^{n}}\ \hat{x}^{T} \Lambda \hat{x}=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2} \quad \text { subject to }\|\hat{x}\|_{2}^{2}=1
 $$
+
+
 然后，我们得到目标的上界为$\lambda_1$：
+
+
 $$
 \hat{x}^{T} \Lambda \hat{x}=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2} \leq \sum_{i=1}^{n} \lambda_{1} \hat{x}_{i}^{2}=\lambda_{1}
 $$
+
+
 此外，设置$\hat{x}=\left[\begin{array}{c}{1} \\ {0} \\ {\vdots} \\ {0}\end{array}\right]$可让上述等式成立，这与设置$x=u_1$相对应。
 
+<br>
+
 ### 4.矩阵微积分
+
 虽然前面章节中的主题通常包含在线性代数的标准课程中，但似乎很少涉及（我们将广泛使用）的一个主题是微积分扩展到向量设置展。尽管我们使用的所有实际微积分都是相对微不足道的，但是符号通常会使事情看起来比实际困难得多。 在本节中，我们将介绍矩阵微积分的一些基本定义，并提供一些示例。
 
 #### 4.1 梯度
 假设$f: \mathbb{R}^{m \times n} \rightarrow \mathbb{R}$是将维度为$m \times n$的矩阵$A\in \mathbb{R}^{m \times n}$作为输入并返回实数值的函数。 然后$f$的梯度（相对于$A\in \mathbb{R}^{m \times n}$）是偏导数矩阵，定义如下：
+
+
 $$
 \nabla_{A} f(A) \in \mathbb{R}^{m \times n}=\left[\begin{array}{cccc}{\frac{\partial f(A)}{\partial A_{11}}} & {\frac{\partial f(A)}{\partial A_{12}}} & {\cdots} & {\frac{\partial f(A)}{\partial A_{1n}}} \\ {\frac{\partial f(A)}{\partial A_{21}}} & {\frac{\partial f(A)}{\partial A_{22}}} & {\cdots} & {\frac{\partial f(A)}{\partial A_{2 n}}} \\ {\vdots} & {\vdots} & {\ddots} & {\vdots} \\ {\frac{\partial f(A)}{\partial A_{m 1}}} & {\frac{\partial f(A)}{\partial A_{m 2}}} & {\cdots} & {\frac{\partial f(A)}{\partial A_{m n}}}\end{array}\right]
 $$
+
+
 即，$m \times n$矩阵:
+
+
 $$
 \left(\nabla_{A} f(A)\right)_{i j}=\frac{\partial f(A)}{\partial A_{i j}}
 $$
+
+
 请注意，$\nabla_{A} f(A) $的维度始终与$A$的维度相同。特殊情况，如果$A$只是向量$A\in \mathbb{R}^{n}$，则
+
+
 $$
 \nabla_{x} f(x)=\left[\begin{array}{c}{\frac{\partial f(x)}{\partial x_{1}}} \\ {\frac{\partial f(x)}{\partial x_{2}}} \\ {\vdots} \\ {\frac{\partial f(x)}{\partial x_{n}}}\end{array}\right]
 $$
+
+
 重要的是要记住，只有当函数是实值时，即如果函数返回标量值，才定义函数的梯度。例如，$A\in \mathbb{R}^{m \times n}$相对于$x$，我们不能取$Ax$的梯度，因为这个量是向量值。
 它直接从偏导数的等价性质得出：
 
@@ -847,19 +964,30 @@ $$
 - 对于$t \in \mathbb{R}$ ，$\nabla_{x}(t f(x))=t \nabla_{x} f(x)$
 
 原则上，梯度是偏导数对多变量函数的自然延伸。然而，在实践中，由于符号的原因，使用梯度有时是很困难的。例如，假设$A\in \mathbb{R}^{m \times n}$是一个固定系数矩阵，假设$b\in \mathbb{R}^{m}$是一个固定系数向量。设$f: \mathbb{R}^{m \times n} \rightarrow \mathbb{R}$为$f(z)=z^Tz$定义的函数，因此$\nabla_{z}f(z)=2z$。但现在考虑表达式，
+
+
 $$
 \nabla f(Ax)
 $$
+
+
 该表达式应该如何解释？ 至少有两种可能性：
 1.在第一个解释中，回想起$\nabla_{z}f(z)=2z$。 在这里，我们将$\nabla f(Ax)$解释为评估点$Ax$处的梯度，因此:
+
 
 $$
 \nabla f(A x)=2(A x)=2 A x \in \mathbb{R}^{m}
 $$
+
+
 2.在第二种解释中，我们将数量$f(Ax)$视为输入变量$x$的函数。 更正式地说，设$g(x) =f(Ax)$。 然后在这个解释中:
+
+
 $$
 \nabla f(A x)=\nabla_{x} g(x) \in \mathbb{R}^{n}
 $$
+
+
 
 在这里，我们可以看到这两种解释确实不同。 一种解释产生$m$维向量作为结果，而另一种解释产生$n$维向量作为结果！ 我们怎么解决这个问题？
 
@@ -871,47 +999,77 @@ $$
 
 保持符号清晰是非常重要的，以后完成课程作业时候你就会发现。
 
+<br>
+
 #### 4.2 黑塞矩阵
 
 假设$f: \mathbb{R}^{n} \rightarrow \mathbb{R}$是一个函数，它接受$\mathbb{R}^{n}$中的向量并返回实数。那么关于$x$的**黑塞矩阵**（也有翻译作海森矩阵），写做：$\nabla_x ^2 f(A x)$，或者简单地说，$H$是$n \times n$矩阵的偏导数：
+
+
 $$
 \nabla_{x}^{2} f(x) \in \mathbb{R}^{n \times n}=\left[\begin{array}{cccc}{\frac{\partial^{2} f(x)}{\partial x_{1}^{2}}} & {\frac{\partial^{2} f(x)}{\partial x_{1} \partial x_{2}}} & {\cdots} & {\frac{\partial^{2} f(x)}{\partial x_{1} \partial x_{n}}} \\ {\frac{\partial^{2} f(x)}{\partial x_{2} \partial x_{1}}} & {\frac{\partial^{2} f(x)}{\partial x_{2}^{2}}} & {\cdots} & {\frac{\partial^{2} f(x)}{\partial x_{2} \partial x_{n}}} \\ {\vdots} & {\vdots} & {\ddots} & {\vdots} \\ {\frac{\partial^{2} f(x)}{\partial x_{n} \partial x_{1}}} & {\frac{\partial^{2} f(x)}{\partial x_{n} \partial x_{2}}} & {\cdots} & {\frac{\partial^{2} f(x)}{\partial x_{n}^{2}}}\end{array}\right]
 $$
+
+
 换句话说，$\nabla_{x}^{2} f(x) \in \mathbb{R}^{n \times n}$，其：
+
 
 $$
 \left(\nabla_{x}^{2} f(x)\right)_{i j}=\frac{\partial^{2} f(x)}{\partial x_{i} \partial x_{j}}
 $$
+
+
 注意：黑塞矩阵通常是对称阵：
+
 
 $$
 \frac{\partial^{2} f(x)}{\partial x_{i} \partial x_{j}}=\frac{\partial^{2} f(x)}{\partial x_{j} \partial x_{i}}
 $$
+
+
 与梯度相似，只有当$f(x)$为实值时才定义黑塞矩阵。
 
 很自然地认为梯度与向量函数的一阶导数的相似，而黑塞矩阵与二阶导数的相似（我们使用的符号也暗示了这种关系）。 这种直觉通常是正确的，但需要记住以下几个注意事项。
 首先，对于一个变量$f: \mathbb{R} \rightarrow \mathbb{R}$的实值函数，它的基本定义：二阶导数是一阶导数的导数，即：
+
+
 $$
 \frac{\partial^{2} f(x)}{\partial x^{2}}=\frac{\partial}{\partial x} \frac{\partial}{\partial x} f(x)
 $$
+
+
 然而，对于向量的函数，函数的梯度是一个向量，我们不能取向量的梯度，即:
+
+
 $$
 \nabla_{x} \nabla_{x} f(x)=\nabla_{x}\left[\begin{array}{c}{\frac{\partial f(x)}{\partial x_{1}}} \\ {\frac{\partial f(x)}{\partial x_{2}}} \\ {\vdots} \\ {\frac{\partial f(x)}{\partial x_{n}}}\end{array}\right]
 $$
 
+
+
 上面这个表达式没有意义。 因此，黑塞矩阵不是梯度的梯度。 然而，下面这种情况却这几乎是正确的：如果我们看一下梯度$\left(\nabla_{x} f(x)\right)_{i}=\partial f(x) / \partial x_{i}$的第$i$个元素，并取关于于$x$的梯度我们得到：
+
+
 $$
 \nabla_{x} \frac{\partial f(x)}{\partial x_{i}}=\left[\begin{array}{c}{\frac{\partial^{2} f(x)}{\partial x_{i} \partial x_{1}}} \\ {\frac{\partial^{2} f(x)}{\partial x_{2} \partial x_{2}}} \\ {\vdots} \\ {\frac{\partial f(x)}{\partial x_{i} \partial x_{n}}}\end{array}\right]
 $$
 
+
+
 这是黑塞矩阵第$i$行（列）,所以：
+
+
 $$
 \nabla_{x}^{2} f(x)=\left[\nabla_{x}\left(\nabla_{x} f(x)\right)_{1} \quad \nabla_{x}\left(\nabla_{x} f(x)\right)_{2} \quad \cdots \quad \nabla_{x}\left(\nabla_{x} f(x)\right)_{n}\right]
 $$
+
+
 简单地说：我们可以说由于：$\nabla_{x}^{2} f(x)=\nabla_{x}\left(\nabla_{x} f(x)\right)^{T}$，只要我们理解，这实际上是取$\nabla_{x} f(x)$的每个元素的梯度，而不是整个向量的梯度。
 
 最后，请注意，虽然我们可以对矩阵$A\in \mathbb{R}^{n}$取梯度，但对于这门课，我们只考虑对向量$x \in \mathbb{R}^{n}$取黑塞矩阵。
 这会方便很多（事实上，我们所做的任何计算都不要求我们找到关于矩阵的黑森方程），因为关于矩阵的黑塞方程就必须对矩阵所有元素求偏导数$\partial^{2} f(A) /\left(\partial A_{i j} \partial A_{k \ell}\right)$，将其表示为矩阵相当麻烦。
+
+<br>
 
 #### 4.3 二次函数和线性函数的梯度和黑塞矩阵
 
@@ -919,29 +1077,47 @@ $$
 
 对于$x \in \mathbb{R}^{n}$, 设$f(x)=b^Tx$  的某些已知向量$b \in \mathbb{R}^{n}$ ，则：
 
+
 $$
 f(x)=\sum_{i=1}^{n} b_{i} x_{i}
 $$
+
+
 所以：
+
+
 $$
 \frac{\partial f(x)}{\partial x_{k}}=\frac{\partial}{\partial x_{k}} \sum_{i=1}^{n} b_{i} x_{i}=b_{k}
 $$
+
+
 由此我们可以很容易地看出$\nabla_{x} b^{T} x=b$。 这应该与单变量微积分中的类似情况进行比较，其中$\partial /(\partial x) a x=a$。
 现在考虑$A\in \mathbb{S}^{n}$的二次函数$f(x)=x^TAx$。 记住这一点：
+
+
 $$
 f(x)=\sum_{i=1}^{n} \sum_{j=1}^{n} A_{i j} x_{i} x_{j}
 $$
+
+
 为了取偏导数，我们将分别考虑包括$x_k$和$x_2^k$因子的项：
+
 
 $$
 \begin{aligned} \frac{\partial f(x)}{\partial x_{k}} &=\frac{\partial}{\partial x_{k}} \sum_{i=1}^{n} \sum_{j=1}^{n} A_{i j} x_{i} x_{j} \\ &=\frac{\partial}{\partial x_{k}}\left[\sum_{i \neq k} \sum_{j \neq k} A_{i j} x_{i} x_{j}+\sum_{i \neq k} A_{i k} x_{i} x_{k}+\sum_{j \neq k} A_{k j} x_{k} x_{j}+A_{k k} x_{k}^{2}\right] \\ &=\sum_{i \neq k} A_{i k} x_{i}+\sum_{j \neq k} A_{k j} x_{j}+2 A_{k k} x_{k} \\ &=\sum_{i=1}^{n} A_{i k} x_{i}+\sum_{j=1}^{n} A_{k j} x_{j}=2 \sum_{i=1}^{n} A_{k i} x_{i} \end{aligned}
 $$
+
+
 最后一个等式，是因为$A$是对称的（我们可以安全地假设，因为它以二次形式出现）。 注意，$\nabla_{x} f(x)$的第$k$个元素是$A$和$x$的第$k$行的内积。 因此，$\nabla_{x} x^{T} A x=2 A x$。 同样，这应该提醒你单变量微积分中的类似事实，即$\partial /(\partial x) a x^{2}=2 a x$。
 
 最后，让我们来看看二次函数$f(x)=x^TAx$黑塞矩阵（显然，线性函数$b^Tx$的黑塞矩阵为零）。在这种情况下:
+
+
 $$
 \frac{\partial^{2} f(x)}{\partial x_{k} \partial x_{\ell}}=\frac{\partial}{\partial x_{k}}\left[\frac{\partial f(x)}{\partial x_{\ell}}\right]=\frac{\partial}{\partial x_{k}}\left[2 \sum_{i=1}^{n} A_{\ell i} x_{i}\right]=2 A_{\ell k}=2 A_{k \ell}
 $$
+
+
 因此，应该很清楚$\nabla_{x}^2 x^{T} A x=2 A$，这应该是完全可以理解的（同样类似于$\partial^2 /(\partial x^2) a x^{2}=2a$的单变量事实）。
 
 简要概括起来：
@@ -958,60 +1134,104 @@ $$
 
 使用公式$\|x\|^{2}=x^Tx$，我们可以得到：
 
+
 $$
 \begin{aligned}\|A x-b\|_{2}^{2} &=(A x-b)^{T}(A x-b) \\ &=x^{T} A^{T} A x-2 b^{T} A x+b^{T} b \end{aligned}
 $$
+
+
 根据$x$的梯度，并利用上一节中推导的性质：
+
+
 $$
 \begin{aligned} \nabla_{x}\left(x^{T} A^{T} A x-2 b^{T} A x+b^{T} b\right) &=\nabla_{x} x^{T} A^{T} A x-\nabla_{x} 2 b^{T} A x+\nabla_{x} b^{T} b \\ &=2 A^{T} A x-2 A^{T} b \end{aligned}
 $$
+
+
 将最后一个表达式设置为零，然后解出$x$，得到了正规方程：
+
+
 $$
 x = (A^TA)^{-1}A^Tb
 $$
+
+
 这和我们在课堂上得到的相同。
+
+<br>
 
 #### 4.5 行列式的梯度
 
 现在让我们考虑一种情况，我们找到一个函数相对于矩阵的梯度，也就是说，对于$A\in \mathbb{R}^{n \times n}$，我们要找到$\nabla_{A}|A|$。回想一下我们对行列式的讨论：
+
+
 $$
 |A|=\sum_{i=1}^{n}(-1)^{i+j} A_{i j}\left|A_{\backslash i, \backslash j}\right| \quad(\text { for any } j \in 1, \ldots, n)
 $$
+
+
 所以：
+
+
 $$
 \frac{\partial}{\partial A_{k \ell}}|A|=\frac{\partial}{\partial A_{k \ell}} \sum_{i=1}^{n}(-1)^{i+j} A_{i j}\left|A_{\backslash i, \backslash j}\right|=(-1)^{k+\ell}\left|A_{\backslash k,\backslash \ell}\right|=(\operatorname{adj}(A))_{\ell k}
 $$
+
+
 从这里可以知道，它直接从伴随矩阵的性质得出：
+
+
 $$
 \nabla_{A}|A|=(\operatorname{adj}(A))^{T}=|A| A^{-T}
 $$
-现在我们来考虑函数$f : \mathbb{S}_{++}^{n} \rightarrow \mathbb{R}$，$f(A)=\log |A|$。注意，我们必须将$f$的域限制为正定矩阵，因为这确保了$|A|>0$，因此$|A|$的对数是实数。在这种情况下，我们可以使用链式法则（没什么奇怪的，只是单变量演算中的普通链式法则）来看看：
+
+
+现在我们来考虑函数$f : \mathbb{S}_{++}^{n} \rightarrow \mathbb{R}$，$f(A)=\log \|A\|$。注意，我们必须将$f$的域限制为正定矩阵，因为这确保了$\|A\|>0$，因此$\|A\|$的对数是实数。在这种情况下，我们可以使用链式法则（没什么奇怪的，只是单变量演算中的普通链式法则）来看看：
+
+
 $$
 \frac{\partial \log |A|}{\partial A_{i j}}=\frac{\partial \log |A|}{\partial|A|} \frac{\partial|A|}{\partial A_{i j}}=\frac{1}{|A|} \frac{\partial|A|}{\partial A_{i j}}
 $$
+
+
 从这一点可以明显看出：
+
 
 $$
 \nabla_{A} \log |A|=\frac{1}{|A|} \nabla_{A}|A|=A^{-1}
 $$
+
+
 我们可以在最后一个表达式中删除转置，因为$A$是对称的。注意与单值情况的相似性，其中$\partial /(\partial x) \log x=1 / x$。
+
+<br>
 
 #### 4.6 特征值优化
 
 最后，我们使用矩阵演算以直接导致特征值/特征向量分析的方式求解优化问题。 考虑以下等式约束优化问题：
 
+
 $$
 \max _{x \in \mathbb{R}^{n}} x^{T} A x \quad \text { subject to }\|x\|_{2}^{2}=1
 $$
+
+
 对于对称矩阵$A\in \mathbb{S}^{n}$。求解等式约束优化问题的标准方法是采用**拉格朗日**形式，一种包含等式约束的目标函数，在这种情况下，拉格朗日函数可由以下公式给出：
+
 
 $$
 \mathcal{L}(x, \lambda)=x^{T} A x-\lambda x^{T} x
 $$
-其中，$\lambda $被称为与等式约束关联的拉格朗日乘子。可以确定，要使$x^*$成为问题的最佳点，拉格朗日的梯度必须在$x^*$处为零（这不是唯一的条件，但它是必需的）。也就是说，
+
+
+其中，$\lambda $ 被称为与等式约束关联的拉格朗日乘子。可以确定，要使$x^*$成为问题的最佳点，拉格朗日的梯度必须在$x^*$处为零（这不是唯一的条件，但它是必需的）。也就是说，
+
+
 $$
 \nabla_{x} \mathcal{L}(x, \lambda)=\nabla_{x}\left(x^{T} A x-\lambda x^{T} x\right)=2 A^{T} x-2 \lambda x=0
 $$
+
+
 请注意，这只是线性方程$Ax =\lambda x$。 这表明假设$x^T x = 1$，可能最大化（或最小化）$x^T Ax$的唯一点是$A$的特征向量。
 
 
