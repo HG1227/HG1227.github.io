@@ -869,8 +869,8 @@ $$
 
 
 
-
 定义了一个新的属于$\mathbb {R}^{n}$的基（坐标系），意义如下：对于任何向量$x \in\mathbb{R}^{n}$都可以表示为 $u_1，\cdots u_n$ 的线性组合，其系数为 $x_1,\cdots x_n$ ：
+
 
 
 $$
@@ -882,9 +882,11 @@ $$
 在第二个等式中，我们使用矩阵和向量相乘的方法。 实际上，这种$\hat x$是唯一存在的:
 
 
+
 $$
 x=U \hat{x} \Leftrightarrow U^{T} x=\hat{x}
 $$
+
 
 
 换句话说，向量$\hat x=U^Tx$可以作为向量$x$的另一种表示，与$U$定义的基有关。
@@ -893,24 +895,31 @@ $$
 然后，再利用$UU^T=U^T=I$和方程$A=AUU^T=U\Lambda U^T$，我们得到：
 
 
+
 $$
 \hat{z}=U^{T} z=U^{T} A x=U^{T} U \Lambda U^{T} x=\Lambda \hat{x}=\left[\begin{array}{c}{\lambda_{1} \hat{x}_{1}} \\ {\lambda_{2} \hat{x}_{2}} \\ {\vdots} \\ {\lambda_{n} \hat{x}_{n}}\end{array}\right]
 $$
+
 
 
 我们可以看到，原始空间中的左乘矩阵$A$等于左乘对角矩阵$\Lambda$相对于新的基，即仅将每个坐标缩放相应的特征值。
 在新的基上，矩阵多次相乘也变得简单多了。例如，假设$q=AAAx$。根据$A$的元素导出$q$的分析形式，使用原始的基可能是一场噩梦，但使用新的基就容易多了：
 
 
+
 $$
 \hat{q}=U^{T} q=U^{T} AAA x=U^{T} U \Lambda U^{T} U \Lambda U^{T} U \Lambda U^{T} x=\Lambda^{3} \hat{x}=\left[\begin{array}{c}{\lambda_{1}^{3} \hat{x}_{1}} \\ {\lambda_{2}^{3} \hat{x}_{2}} \\ {\vdots} \\ {\lambda_{n}^{3} \hat{x}_{n}}\end{array}\right]
 $$
+
+
 **“对角化”二次型**。作为直接的推论，二次型$x^TAx$也可以在新的基上简化。
+
 
 
 $$
 x^{T} A x=x^{T} U \Lambda U^{T} x=\hat{x} \Lambda \hat{x}=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2}
 $$
+
 
 
 (回想一下，在旧的表示法中，$x^{T} A x=\sum_{i=1, j=1}^{n} x_{i} x_{j} A_{i j}$涉及一个$n^2$项的和，而不是上面等式中的$n$项。)利用这个观点，我们还可以证明矩阵$A$的正定性完全取决于其特征值的符号：
@@ -919,15 +928,20 @@ $$
 2. 如果所有的$\lambda_i\geq 0$，则矩阵$A$是为正半定，因为对于任意的$\hat x $,$x^{T} A x=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2} \geq 0$
 3. 同样，如果所有$\lambda_i<0$或$\lambda_i\leq 0$，则矩阵$A$分别为负定或半负定。
 4. 最后，如果$A$同时具有正特征值和负特征值，比如λ$\lambda_i>0$和$\lambda_j<0$，那么它是不定的。这是因为如果我们让$\hat x$满足$\hat x_i=1$和$\hat x_k=0$，同时所有的$k\ne i$，那么
+   
 $$
 x^{T} A x=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2}>0
 $$
 ,我们让$\hat x$满足$\hat x_i=1$和$\hat x_k=0$，同时所有的$k\ne i$，那么$x^{T} A x=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2}<0$ 
 
 特征值和特征向量经常出现的应用是最大化矩阵的某些函数。特别是对于矩阵$A \in \mathbb{S}^{n}$，考虑以下最大化问题：
+
+
 $$
 \max _{x \in \mathbb{R}^{n}} \ x^{T} A x=\sum_{i=1}^{n} \lambda_{i} \hat{x}_{i}^{2} \quad \text { subject to }\|x\|_{2}^{2}=1
 $$
+
+
 也就是说，我们要找到（范数1）的向量，它使二次型最大化。假设特征值的阶数为$\lambda_1 \geq \lambda _2 \geq \cdots \lambda_n$，此优化问题的最优值为$\lambda_1$，且与$\lambda_1$对应的任何特征向量$u_1$都是最大值之一。（如果$\lambda_1 > \lambda_2$，那么有一个与特征值$\lambda_1$对应的唯一特征向量，它是上面那个优化问题的唯一最大值。）
 
 我们可以通过使用对角化技术来证明这一点：注意，通过公式$\|U x\|_{2}=\|x\|_{2}$推出$\|x\|_{2}=\|\hat{x}\|_{2}$，并利用公式：
