@@ -525,12 +525,15 @@ $$
 \operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\left\{v : v=\sum_{i=1}^{n} \alpha_{i} x_{i}, \quad \alpha_{i} \in \mathbb{R}\right\}
 $$
 
-
-可以证明，如果$\{x_{1}, \ldots x_{n}\}$是一组$n$个线性无关的向量，其中每个$x_i \in \mathbb{R}^{n}$，则 $\operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\mathbb{R}^{n}$ 。 换句话说，任何向量$v\in \mathbb{R}^{n}$ 都可以写成$x_1$ 到$x_n$ 的线性组合。
+可以证明，如果$\{x_{1}, \ldots x_{n}\}$是一组$n$个线性无关的向量，其中每个$x_i \in \mathbb{R}^{n}$，则 $$
+\operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\mathbb{R}^{n}
+$$  。 换句话说，任何向量$v\in \mathbb{R}^{n}$ 都可以写成$x_1$ 到$x_n$ 的线性组合。
 
 向量$y\in \mathbb{R}^{m}$投影到$\{x_{1}, \ldots x_{n}\}$（这里我们假设$x_i \in \mathbb{R}^{m}$）得到向量$v \in \operatorname{span}(\{x_{1}, \ldots, x_{n}\})$，由欧几里德范数$\|v  -  y\|_2$可以得知，这样$v$尽可能接近$y$。
 
-我们将投影表示为 $\operatorname{Proj}\left(y ;\left\{x_{1}, \ldots x_{n}\right\}\right)$  ，并且可以将其正式定义为:
+我们将投影表示为 $$
+\operatorname{Proj}\left(y ;\left\{x_{1}, \ldots x_{n}\right\}\right)
+$$ ，并且可以将其正式定义为:
 
 
 
