@@ -12,7 +12,7 @@ type: page
 
 ## 📝 可视化
 
-<a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a>
+<a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/scikit-learn-Cookbook/" target="_blank">**sklearn**</a> 
 
 
 
