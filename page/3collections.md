@@ -14,6 +14,10 @@ type: page
 
 <a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/scikit-learn-Cookbook/" target="_blank">**sklearn**</a>  \| <a href=" https://hg1227.github.io/Scipy-Cookbook/" target="_blank">**Scipy**</a>  
 
+<br />
+
+ <a href="https://hg1227.github.io/gitbook_use/" target="_blank">**gitbook-use**</a>   
+
 
 
 ## 📰 blogs
