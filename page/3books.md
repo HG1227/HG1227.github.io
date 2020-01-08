@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Book
+title: Books
 permalink: /book/
 icon: bookmark
 type: page
@@ -8,8 +8,11 @@ type: page
 
 * content
 {:toc}
+##  2020 年
+
 <table width="100%"   >
-        <tr>           
+        <tr>
+           <td>1</td>
            <td align="center" width="115px">
            <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200108183920.jpg" href="https://book.douban.com/subject/30346218/"  width="115px" height="172px"/></td>
             <td valign="top" > 
@@ -34,15 +37,15 @@ type: page
 
 这部分是之前阅读过部分书籍，有的记不得了。
 
-1. - [x] 《穆斯林的葬礼》
+1. 《穆斯林的葬礼》—— 霍达
 
-2. - [x] 《白夜行》——东野圭吾
+2. 《白夜行》——东野圭吾
 
-3. - [x] 《岛上书店》——加布瑞埃拉泽文
+3. 《岛上书店》——加布瑞埃拉泽文
 
-4. - [x] 《秘密》——东野圭吾
+4. 《秘密》——东野圭吾
 
-5. - [x] 《红手指》——东野圭吾
+5. 《红手指》——东野圭吾
 
 6. 《在细雨中呼喊》——余华
 
