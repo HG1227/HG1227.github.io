@@ -15,8 +15,6 @@ type: page
             <td valign="top" > 
             	<span>作者：吴军</span>
                 <br>
-                <span>出版年：2018-11</span>
-                <br>
                 <span>豆瓣评分：<a href="https://book.douban.com/subject/30346218/" target="_blank">8.1</a></span>
             	<br>
                 <span>内容简介：</span>
