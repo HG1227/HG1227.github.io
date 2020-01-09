@@ -2,7 +2,7 @@
 layout: page
 title: Books
 permalink: /book/
-icon: bookmark
+icon: book
 type: page
 ---
 

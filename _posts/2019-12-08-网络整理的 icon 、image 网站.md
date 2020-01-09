@@ -59,6 +59,16 @@ Icons8，来自国外的矢量图标库，使用方式和Find Icons差不多，�
 
 链接 ： <https://www.easyicon.net/>
 
+## 6.  [Font Awesome矢量图标](http://fontawesome.dashgame.com/)
+
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200109084302.png"/>
+</center>
+
+链接：<http://fontawesome.dashgame.com/>
+
+
+
 
 ## 高质量的图片网站
 
@@ -76,7 +86,7 @@ PicJumbo:在线免费高质量商用素材网是一个叫维克多的人创办�
 
 免费无版权欧美生活图片网是一个提供免费高清图像素材，并且无版权限制，图片多为欧洲景观，多为摄影师拍摄的生活类图片，所有的影像都是公共领域捐赠而来，用户可以使用该站点上的图片资源用户个人或商业用途。
 
-[Unsplash | Free High-Resolution Photos](https://unsplash.com/)
+[Unsplash \| Free High-Resolution Photos](https://unsplash.com/)
 
 UnSplash:免费高清壁纸分享网是一个坚持每天分享高清的摄影图片的站点，每天更新一张高质量的图片素材，全是生活中的景象作品，清新的生活气息图片可以作为桌面壁纸也可以应用于各种需要的环境。UnSplash网站上的图片大又清，适合各种使用。进入网站点击图片下载高清版；
 
