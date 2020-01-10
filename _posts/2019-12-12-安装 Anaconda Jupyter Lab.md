@@ -210,3 +210,5 @@ jupyter lab
 1. <a href="https://blog.csdn.net/weixin_37641832/article/details/94437445" target=""> 在 Windows 上安装和配置 Jupyter Lab 作为桌面级应用程序</a>
 2. <a href="https://blog.csdn.net/dushilian/article/details/89644210" target="">基于（已安装）python3.7的anaconda安装及环境变量配置</a>
 3. <a href="http://liuchengxu.org/pelican-blog/jupyter-notebook-tips.html" target="">27 个Jupyter Notebook的小提示与技巧</a>
+4. <a href="https://blog.csdn.net/qq_40644583/article/details/82790636" target="">python3环境搭建（利用Anaconda+pycharm）完整版</a>
+
