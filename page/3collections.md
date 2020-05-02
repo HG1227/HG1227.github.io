@@ -12,7 +12,7 @@ type: page
 
 ## 📝 可视化
 
-<a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/scikit-learn-Cookbook/" target="_blank">**sklearn**</a>  \| <a href=" https://hg1227.github.io/Scipy-Cookbook/" target="_blank">**Scipy**</a>  
+<a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/scikit-learn-Cookbook/" target="_blank">**sklearn**</a>  \| <a href="https://hg1227.github.io/numpy-pandas-scipy/" target="_blank">**Numpy-Pandas-Scipy**</a>  
 
 <br />
 
