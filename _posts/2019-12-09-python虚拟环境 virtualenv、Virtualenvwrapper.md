@@ -13,7 +13,7 @@ tags: virtualenv Virtualenvwrapper
 
 
 
-﻿## python虚拟环境 virtualenv
+# python虚拟环境 virtualenv
 
 在开发Python应用程序的时候，系统安装的Python3只有一个版本：3.4。所有第三方的包都会被`pip`安装到Python3的`site-packages`目录下。
 
@@ -80,7 +80,7 @@ venv\Scripts\activate
   (venv) D:\python>erp\Scripts\deactivate
   D:\python>  #退出后，回到正常的目录环境下
 ```
-## [windows下安装Python虚拟环境](http://kuanghy.github.io/2016/01/21/python-virtualenvwrapper)`virtualenvwrapper-win`
+# [windows下安装Python虚拟环境](http://kuanghy.github.io/2016/01/21/python-virtualenvwrapper)`virtualenvwrapper-win`
 安装virtualenvwrapper
 
 ```python
