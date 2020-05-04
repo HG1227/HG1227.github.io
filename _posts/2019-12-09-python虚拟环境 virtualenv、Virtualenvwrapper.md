@@ -26,7 +26,7 @@ tags: virtualenv Virtualenvwrapper
 ```python
 $ pip3 install virtualenv
 
-或者  cmd  pip install virtualenv
+# 或者  cmd  pip install virtualenv
 
 ```
 然后，假定我们要开发一个新的项目，需要一套独立的Python运行环境，可以这么做：
@@ -58,7 +58,11 @@ Installing setuptools, pip, wheel...done.
 venv\Scripts\activate
 ```
 或者
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191023200605344.png)
+
+
+
 激活后，命令行会显示以虚拟环境的名开头，如下：
 
 ```python
@@ -74,7 +78,7 @@ venv\Scripts\activate
 
 ```python
   (venv) D:\python>erp\Scripts\deactivate
-  D:\python>  退出后，回到正常的目录环境下
+  D:\python>  #退出后，回到正常的目录环境下
 ```
 ## [windows下安装Python虚拟环境](http://kuanghy.github.io/2016/01/21/python-virtualenvwrapper)`virtualenvwrapper-win`
 安装virtualenvwrapper
@@ -101,16 +105,16 @@ mkvirtualenv [envname]
 ```python
 -a project_path
 
-    与一个工程目录建立关联
+   # 与一个工程目录建立关联
 
 -i package
 
-    创建环境时安装相应的包.
-    如 -i Flask、-i Flask==0.11.1 或者安装多个包 -i Flask -i locustio
+    #创建环境时安装相应的包.
+    #如 -i Flask、-i Flask==0.11.1 或者安装多个包 -i Flask -i locustio
 
 -r requirements_file
 
-    同 pip install -r requirements_file 用法
+   # 同 pip install -r requirements_file 用法
 ```
 该命令还支持加入 virtualenv 的参数选项，例如指定环境的 python 版本为 3.5：
 
