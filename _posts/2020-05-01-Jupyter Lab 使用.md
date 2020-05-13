@@ -9,6 +9,12 @@ tags: JupyterLab
 {:toc}
 
 
+
+
+
+
+
+
 ## `warnings` 过滤器
 
 ```python
@@ -154,7 +160,7 @@ simplefilter(action='ignore', category=FutureWarning)
   
 
 
-  
+
 
 
 
