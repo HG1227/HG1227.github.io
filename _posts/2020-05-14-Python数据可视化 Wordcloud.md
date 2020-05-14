@@ -195,8 +195,6 @@ plt.show()
 
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514162051.jpg" height="80%" width="80%"></center> 
-
-
 ## 中文分词 `jieba` 
 
 中文分词第三方模块 `jieba` 
@@ -324,7 +322,6 @@ plt.axis('off')
 plt.show()
 ```
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165209.jpg" height="80%" width="80%"></center>
-
 ## Python数据可视化 -- stylecloud
 
 制作词云图
@@ -414,7 +411,9 @@ stylecloud.gen_stylecloud(text=' '.join(weibo_text),
 '''显示本地图片'''
 Image(filename='图20.png') 
 ```
-<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165818.png" height="80%" width="80%"></center
+
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165818.png" height="80%" width="80%"></center>
+
 
 
 ## 参考
