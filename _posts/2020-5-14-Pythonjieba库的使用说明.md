@@ -44,7 +44,7 @@ Jieba分词依靠中文词库
 ## (2)、`jieba`库常用函数
 
 <center>
-<img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514203254.png"
+<img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514203254.png">
 </center>
 
 
@@ -64,15 +64,11 @@ Jieba分词依靠中文词库
 返回的是列表。
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514204703.png"></center>
-
-
 ### `jieba.cut_for_search()`
 
 是搜索引擎模式
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514204920.png"></center>
-
-
 ### 添加自定义词典
 
 使用默认字典时，一些新的词汇无法正确分词
