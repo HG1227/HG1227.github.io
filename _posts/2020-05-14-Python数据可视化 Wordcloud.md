@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Python数据可视化 词云图
-date:   2020-4-23
+date:   2020-5-14
 categories: Python
 tags:  词云 
 ---
@@ -372,8 +372,7 @@ stylecloud.gen_stylecloud(text=text,
 Image(filename='图17.png') 
 ```
 
-<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165600.png" height="80%" width="80%"></center
-
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165600.png" height="80%" width="80%"></center>
 
 
 ```python
@@ -389,7 +388,8 @@ stylecloud.gen_stylecloud(text=text,
 Image(filename='图18.png') 
 ```
 
-<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165639.png" height="80%" width="80%"></center
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165639.png" height="80%" width="80%"></center>
+
 
 
 ### 绘制中文词云图
@@ -415,8 +415,9 @@ Image(filename='图20.png')
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514165818.png" height="80%" width="80%"></center>
 
 
-
 ## 参考
+
+
 
 1. <a href="https://www.cnblogs.com/wkfvawl/p/11585986.html" blank="">Python 词云可视化</a> 
 2. <a href="https://blog.csdn.net/FontThrone/article/details/72782499" blank="">Python中文分词 jieba 十五分钟入门与进阶</a>  
