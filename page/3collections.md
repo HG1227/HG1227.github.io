@@ -16,6 +16,10 @@ type: page
 
 <br />
 
+<a href="https://pyecharts.org/#/zh-cn/basic_charts?id=demo-6" target="_blank">**pyecharts**</a>  \|  <a href="http://gallery.pyecharts.org/" target="_blank">**pyecharts-gallery**</a>  
+
+<br />
+
  <a href="https://hg1227.github.io/gitbook_use/" target="_blank">**gitbook-use**</a>   
 
 
