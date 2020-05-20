@@ -14,7 +14,7 @@ type: page
 
 <a href="https://hg1227.github.io/matplotlib/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/scikit-learn-Cookbook/" target="_blank">**sklearn**</a>  \| <a href="https://hg1227.github.io/numpy-pandas-scipy/" target="_blank">**Numpy-Pandas-Scipy**</a> \| <a href="https://hg1227.github.io/python/" target="_blank">**Python**</a> 
 
-<br />
+<br /> 
 
 <a href="https://pyecharts.org/#/zh-cn/basic_charts?id=demo-6" target="_blank">**pyecharts**</a>  \|  <a href="http://gallery.pyecharts.org/" target="_blank">**pyecharts-gallery**</a>  
 
