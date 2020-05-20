@@ -7,6 +7,18 @@ tags:  pyecharts
 ---
 * content
 {:toc}
+柱状图/条形图
+
+
+
+
+
+
+
+
+
+
+
 
 
 # [Bar：柱状图/条形图](https://pyecharts.org/#/zh-cn/rectangular_charts?id=bar：柱状图条形图)
@@ -142,7 +154,6 @@ c = (
 
 
 
-
 # [Bar - Bar_xyaxis_name](http://gallery.pyecharts.org/#/Bar/bar_xyaxis_name?id=bar-bar_xyaxis_name)
 
 ```python
@@ -170,7 +181,6 @@ c = (
 
 
 
-
 # [Bar - Bar_different_series_gap](http://gallery.pyecharts.org/#/Bar/bar_different_series_gap?id=bar-bar_different_series_gap)
 
 ```python
@@ -192,7 +202,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520164332.png"></center> 
 
-
 # [Bar - Bar_same_series_gap](http://gallery.pyecharts.org/#/Bar/bar_same_series_gap?id=bar-bar_same_series_gap)
 
 ```python
@@ -212,7 +221,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520164636.png"></center>
-
 
 
 
@@ -265,7 +273,6 @@ bar = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520212629.png"></center>
-
 
 # [Bar - Bar_markline_custom](http://gallery.pyecharts.org/#/Bar/bar_markline_custom?id=bar-bar_markline_custom) 
 
@@ -324,7 +331,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520211228.png"></center>
 
-
 # [Bar - Bar_markpoint_custom](http://gallery.pyecharts.org/#/Bar/bar_markpoint_custom?id=bar-bar_markpoint_custom)
 
 ```python
@@ -375,7 +381,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520161927.png"></center>
 
-
 # [Bar - Bar_stack1](http://gallery.pyecharts.org/#/Bar/bar_stack1?id=bar-bar_stack1)
 
 ```python
@@ -398,7 +403,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520162608.png"></center>
-
 
 # [Bar - Stack_bar_percent](http://gallery.pyecharts.org/#/Bar/stack_bar_percent?id=bar-stack_bar_percent) 
 
@@ -443,7 +447,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520163603.png"></center>
 
-
 修改代码：
 
 ```python
@@ -459,7 +462,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520163820.png"></center>
-
 
 # [Bar - Multiple_y_axes](http://gallery.pyecharts.org/#/Bar/multiple_y_axes?id=bar-multiple_y_axes)
 
@@ -582,7 +584,6 @@ bar.overlap(line).render("multiple_y_axes.html")
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520194629.png"></center>
 
-
 # [Bar - Mixed_bar_and_line](http://gallery.pyecharts.org/#/Bar/mixed_bar_and_line?id=bar-mixed_bar_and_line) 
 
 ```python
@@ -621,7 +622,6 @@ bar.render('opop.html')
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520202759.png"></center>
 
-
 默认的 y 轴 ，index 为 0，若需要多个 y 轴，需要使用`.extend_axis` 进行扩展
 
 ```python
@@ -645,7 +645,6 @@ bar.add_yaxis("降水量", jiangshuiliang)
 
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520210242.png"></center>
-
 
 ```python
 x_data = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
@@ -712,7 +711,6 @@ bar.overlap(line).render("mixed_bar_and_line.html")
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520205807.png"></center> 
 
-
 # [Bar - Bar_yaxis_formatter](http://gallery.pyecharts.org/#/Bar/bar_yaxis_formatter?id=bar-bar_yaxis_formatter)
 
 ```python
@@ -732,7 +730,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520203827.png"></center>
-
 
 # [Bar - Bar_rotate_xaxis_label](http://gallery.pyecharts.org/#/Bar/bar_rotate_xaxis_label?id=bar-bar_rotate_xaxis_label)
 
@@ -765,7 +762,6 @@ c = (
 
 <center> <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520164918.png"></center>
 
-
 # [Bar - Bar_base_dict_config](http://gallery.pyecharts.org/#/Bar/bar_base_dict_config?id=bar-bar_base_dict_config)
 
 ```python
@@ -787,7 +783,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520165252.png"></center>
-
 
 # [Bar - Bar_is_selected](http://gallery.pyecharts.org/#/Bar/bar_is_selected?id=bar-bar_is_selected)
 
@@ -812,7 +807,6 @@ c = (
 
 
 
-
 # [Bar - Bar_datazoom_slider](http://gallery.pyecharts.org/#/Bar/bar_datazoom_slider?id=bar-bar_datazoom_slider)
 
 ```
@@ -833,7 +827,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520170053.png"></center>
-
 
 # [Bar - Bar_datazoom_slider_vertical](http://gallery.pyecharts.org/#/Bar/bar_datazoom_slider_vertical?id=bar-bar_datazoom_slider_vertical)
 
@@ -857,7 +850,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520210834.png"></center>
 
-
 # [Bar - Bar_datazoom_inside](http://gallery.pyecharts.org/#/Bar/bar_datazoom_inside?id=bar-bar_datazoom_inside)
 
 ```python
@@ -880,7 +872,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520211438.png"></center>
 
-
 # [Bar - Bar_datazoom_both](http://gallery.pyecharts.org/#/Bar/bar_datazoom_both?id=bar-bar_datazoom_both)
 
 ```
@@ -902,7 +893,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520212325.png"></center>
-
 
 
 
@@ -930,7 +920,6 @@ c = (
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520165527.png"></center>
 
-
 # [Bar - Bar_toolbox](http://gallery.pyecharts.org/#/Bar/bar_toolbox?id=bar-bar_toolbox)
 
 ```python
@@ -954,7 +943,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520165921.png"></center>
-
 
 # [Bar - Bar_base_with_custom_background_image](http://gallery.pyecharts.org/#/Bar/bar_base_with_custom_background_image?id=bar-bar_base_with_custom_background_image)
 
@@ -991,7 +979,6 @@ c.render("bar_base_with_custom_background_image.html")
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520210611.png"></center> 
-
 
 
 
