@@ -21,7 +21,7 @@ type: page
         <hr>
         <ul>
           {% for post in site.posts %}
-
+			{% if categ == "notes" %}
             {% unless post.next %}
               <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
             {% else %}
@@ -46,7 +46,7 @@ type: page
 
                 </div> 
             </li>
-
+			{% endif %}
           {% endfor %}
         </ul>
     </div>
@@ -62,6 +62,8 @@ type: page
                 <ul id="content-side" class="content-ul">
                     {% assign counter = 0 %}
                         {% for post in site.posts %}
+							
+						
                           {% assign thisyear = post.date | date: "%Y" %}
                           {% assign prevyear = post.previous.date | date: "%Y" %}
                           {% assign counter = counter | plus: 1 %}
