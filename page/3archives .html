@@ -64,6 +64,8 @@ type: page
                 <ul id="content-side" class="content-ul">
                     {% assign counter = 0 %}
                         {% for post in site.posts %}
+								{% for categ in post.categories %}
+								{% if categ == "notes" %}
 							
 						
                           {% assign thisyear = post.date | date: "%Y" %}
@@ -73,6 +75,9 @@ type: page
                             <li><a data-scroll href="#y{{ post.date | date: '%Y' }}">{{ thisyear }} ({{ counter }})</a></li>
                             {% assign counter = 0 %}
                           {% endif %}
+						  
+						  			{% endif %}
+			{% endfor %}
                         {% endfor %}
                 </ul>
             </div>
