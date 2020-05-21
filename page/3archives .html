@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Books
+title: Life
 permalink: 
-icon: archive
+icon: video 
 type: page
 ---
 
@@ -17,7 +17,8 @@ type: page
 
 <div class="page clearfix">
     <div class="left">
-        <h1>{{page.title}}</h1>
+        <h1>个人记录</h1>
+        <small></small>
         <hr>
         <ul>
           {% for post in site.posts %}
@@ -104,8 +105,8 @@ type: page
                             {% assign counter = 0 %}
                           {% endif %}
 						  
-						  			{% endif %}
-			{% endfor %}
+						  {% endif %}
+						{% endfor %}
                         {% endfor %}
                 </ul>
             </div>
