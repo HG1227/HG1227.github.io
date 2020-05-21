@@ -359,6 +359,9 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 
 ## Update Log
 
+-  将jekyll博客主页的超链接变为新标签页打开
+  在根目录找到`index.html`,打开编辑,找到`<a href="{{ post.url | prepend: site.baseurl }}">`代码行,在后面添加`target="_blank"` 即`<a href="{{ post.url | prepend: site.baseurl }}" target="_blank">`
+
 ### 2017.2.28
 
 - `[^]` 修复目录滚动 bug [#22](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/22), [#48](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/48)
