@@ -69,7 +69,7 @@ type: page
            <td align="left" width="70%"> google 字体库 </td>
         </tr>
         <tr>           
-           <td align="center" width="30%"><a href="https://hg1227.github.io/2019/12/07/%E6%95%B4%E7%90%86%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B7%A5%E5%85%B7/" target="_blank">icon 、image 网站</a> </td>
+           <td align="center" width="30%"><a href="https://hg1227.github.io/2019/12/07/%E7%BD%91%E7%BB%9C%E6%95%B4%E7%90%86%E7%9A%84-icon-image-%E7%BD%91%E7%AB%99/" target="_blank">icon 、image 网站</a> </td>
            <td align="left" width="70%"> 网络整理的 icon 、image 网站 </td>
         </tr>
 </table>
