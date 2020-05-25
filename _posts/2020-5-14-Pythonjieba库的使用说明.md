@@ -90,6 +90,8 @@ print("/ ".join(seg_list1))
 # 无妻徒刑/ ,/ 厉害炸了/ ,/ 卷积神经网络
 ```
 
+
+
 ### 在`jieba`中添加中文词语
 
 这种方法也可以防止部分词被错分
@@ -98,7 +100,48 @@ print("/ ".join(seg_list1))
 jieba.add_word('路明非')
 ```
 
+也可以添加自定义的字典文本文件
 
+- 开发者可以指定自己自定义的词典，以便包含 jieba 词库里没有的词。虽然 jieba 有新词识别能力，但是自行添加新词可以保证更高的正确率
+- 用法： jieba.load_userdict(file_name) # file_name 为文件类对象或自定义词典的路径
+- 词典格式和 `dict.txt` 一样，一个词占一行；每一行分三部分：词语、词频（可省略）、词性（可省略），用空格隔开，顺序不可颠倒。`file_name` 若为路径或二进制方式打开的文件，则文件必须为 UTF-8 编码。
+- 词频省略时使用自动计算的能保证分出该词的词频。
+
+
+
+例如：**userdict.txt**
+
+```
+云计算 5
+李小福 2 nr
+创新办 3 i
+easy_install 3 eng
+好用 300
+韩玉赏鉴 3 nz
+八一双鹿 3 nz
+台中
+凱特琳 nz
+Edu Trust认证 2000
+
+```
+
+```python
+import jieba
+jieba.load_userdict("userdict.txt")
+
+
+jieba.add_word('石墨烯')
+jieba.add_word('凱特琳')
+jieba.del_word('自定义词')
+
+test_sent = (
+"李小福是创新办主任也是云计算方面的专家; 什么是八一双鹿\n"
+"例如我输入一个带“韩玉赏鉴”的标题，在自定义词库中也增加了此词为N类\n"
+"「台中」正確應該不會被切開。mac上可分出「石墨烯」；此時又可以分出來凱特琳了。"
+)
+words = jieba.cut(test_sent)
+print('/'.join(words))
+```
 
 
 
@@ -129,8 +172,13 @@ for i in range(15):
 
 
 
+
+
+
+
 # 参考
 
 1. <a href="https://www.cnblogs.com/wkfvawl/p/9487165.html" blank="">Python jieba库的使用说明</a>  
 2. <a href="https://blog.csdn.net/zhuzuwei/article/details/80491349" blank="">自然语言处理5：jieba分词详解全模式，精确模式和搜索引擎模式</a> 
 3. <a href="https://blog.csdn.net/FontThrone/article/details/72782499" blank="">Python中文分词 jieba 十五分钟入门与进阶</a>  
+4. <a href="https://github.com/fxsjy/jieba" blank="">jieba</a>   
