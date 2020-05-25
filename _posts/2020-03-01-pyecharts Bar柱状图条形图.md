@@ -21,6 +21,58 @@ tags:  pyecharts
 
 
 
+
+
+参考框架(有待完善)
+
+```python
+bar = (
+    Bar(init_opts=opts.InitOpts(height='400px', width='800px')# 初始化设置
+       )
+    .add_xaxis(main_pol.index.tolist())
+    .add_yaxis("", main_pol.values.tolist(),
+               color='#130f40', # 设置柱体的颜色
+               category_gap=20,
+               # 点标记
+               markpoint_opts=opts.MarkPointOpts(
+                   data=[opts.MarkPointItem(type_='min', name='最小值')]),  # 也可以自定义标记点
+               # 线标记
+               markline_opts=opts.MarkLineOpts(
+                   data=[opts.MarkLineItem(type_="max", name='最大值')]) #也可以自定义标记线
+               )
+    .set_global_opts(
+        # 设置标题等信息
+        title_opts=opts.TitleOpts(title="全国城市首要污染物", subtitle='2019年2月5日凌晨2点'),
+
+        # 设置 x 轴刻度标签参数
+        xaxis_opts=opts.AxisOpts(name='我是 x 轴',
+                                 axislabel_opts=opts.LabelOpts(font_size=16)),
+
+        # 设置 x 轴刻度标签参数
+        yaxis_opts=opts.AxisOpts(name='我是 y 轴', name_gap=10, name_rotate=90, name_location='left',
+
+                                 axislabel_opts=opts.LabelOpts(),  # 刻度标签设置
+                                 # axistick_opts=opts.AxisTickOpts() # 刻度设置
+                                 ),
+        legend_opts=opts.LabelOpts(position="",
+                                   orient="")
+
+    )
+
+    
+    
+    .set_series_opts(label_opts=opts.LabelOpts(font_size=14) #设置数据标签 
+                    
+                    )
+)
+```
+
+
+
+
+
+
+
 # [Bar：柱状图/条形图](https://pyecharts.org/#/zh-cn/rectangular_charts?id=bar：柱状图条形图)
 
 > *class pyecharts.charts.Bar(RectChart)*
@@ -151,9 +203,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520204311.png" ></center>
-
-
-
 # [Bar - Bar_xyaxis_name](http://gallery.pyecharts.org/#/Bar/bar_xyaxis_name?id=bar-bar_xyaxis_name)
 
 ```python
@@ -178,9 +227,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520170732.png"></center>
-
-
-
 # [Bar - Bar_different_series_gap](http://gallery.pyecharts.org/#/Bar/bar_different_series_gap?id=bar-bar_different_series_gap)
 
 ```python
@@ -201,7 +247,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520164332.png"></center> 
-
 # [Bar - Bar_same_series_gap](http://gallery.pyecharts.org/#/Bar/bar_same_series_gap?id=bar-bar_same_series_gap)
 
 ```python
@@ -221,9 +266,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520164636.png"></center>
-
-
-
 # [Bar - Bar_histogram](http://gallery.pyecharts.org/#/Bar/bar_histogram?id=bar-bar_histogram)
 
 ```
@@ -273,7 +315,6 @@ bar = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520212629.png"></center>
-
 # [Bar - Bar_markline_custom](http://gallery.pyecharts.org/#/Bar/bar_markline_custom?id=bar-bar_markline_custom) 
 
 ```python
@@ -330,7 +371,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520211228.png"></center>
-
 # [Bar - Bar_markpoint_custom](http://gallery.pyecharts.org/#/Bar/bar_markpoint_custom?id=bar-bar_markpoint_custom)
 
 ```python
@@ -380,7 +420,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520161927.png"></center>
-
 # [Bar - Bar_stack1](http://gallery.pyecharts.org/#/Bar/bar_stack1?id=bar-bar_stack1)
 
 ```python
@@ -403,7 +442,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520162608.png"></center>
-
 # [Bar - Stack_bar_percent](http://gallery.pyecharts.org/#/Bar/stack_bar_percent?id=bar-stack_bar_percent) 
 
 ```python
@@ -446,7 +484,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520163603.png"></center>
-
 修改代码：
 
 ```python
@@ -462,7 +499,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520163820.png"></center>
-
 # [Bar - Multiple_y_axes](http://gallery.pyecharts.org/#/Bar/multiple_y_axes?id=bar-multiple_y_axes)
 
 ```python
@@ -583,7 +619,6 @@ bar.overlap(line).render("multiple_y_axes.html")
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520194629.png"></center>
-
 # [Bar - Mixed_bar_and_line](http://gallery.pyecharts.org/#/Bar/mixed_bar_and_line?id=bar-mixed_bar_and_line) 
 
 ```python
@@ -621,7 +656,6 @@ bar.render('opop.html')
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520202759.png"></center>
-
 默认的 y 轴 ，index 为 0，若需要多个 y 轴，需要使用`.extend_axis` 进行扩展
 
 ```python
@@ -645,7 +679,6 @@ bar.add_yaxis("降水量", jiangshuiliang)
 
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520210242.png"></center>
-
 ```python
 x_data = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
 
@@ -710,7 +743,6 @@ bar.overlap(line).render("mixed_bar_and_line.html")
 
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520205807.png"></center> 
-
 # [Bar - Bar_yaxis_formatter](http://gallery.pyecharts.org/#/Bar/bar_yaxis_formatter?id=bar-bar_yaxis_formatter)
 
 ```python
@@ -730,7 +762,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520203827.png"></center>
-
 # [Bar - Bar_rotate_xaxis_label](http://gallery.pyecharts.org/#/Bar/bar_rotate_xaxis_label?id=bar-bar_rotate_xaxis_label)
 
 ```python
@@ -761,7 +792,6 @@ c = (
 ```
 
 <center> <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520164918.png"></center>
-
 # [Bar - Bar_base_dict_config](http://gallery.pyecharts.org/#/Bar/bar_base_dict_config?id=bar-bar_base_dict_config)
 
 ```python
@@ -783,7 +813,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520165252.png"></center>
-
 # [Bar - Bar_is_selected](http://gallery.pyecharts.org/#/Bar/bar_is_selected?id=bar-bar_is_selected)
 
 ```python
@@ -804,9 +833,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520211625.png"></center>
-
-
-
 # [Bar - Bar_datazoom_slider](http://gallery.pyecharts.org/#/Bar/bar_datazoom_slider?id=bar-bar_datazoom_slider)
 
 ```
@@ -827,7 +853,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520170053.png"></center>
-
 # [Bar - Bar_datazoom_slider_vertical](http://gallery.pyecharts.org/#/Bar/bar_datazoom_slider_vertical?id=bar-bar_datazoom_slider_vertical)
 
 ```python
@@ -849,7 +874,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520210834.png"></center>
-
 # [Bar - Bar_datazoom_inside](http://gallery.pyecharts.org/#/Bar/bar_datazoom_inside?id=bar-bar_datazoom_inside)
 
 ```python
@@ -871,7 +895,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520211438.png"></center>
-
 # [Bar - Bar_datazoom_both](http://gallery.pyecharts.org/#/Bar/bar_datazoom_both?id=bar-bar_datazoom_both)
 
 ```
@@ -893,9 +916,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520212325.png"></center>
-
-
-
 # [Bar - Bar_with_brush](http://gallery.pyecharts.org/#/Bar/bar_with_brush?id=bar-bar_with_brush)
 
 ```python
@@ -919,7 +939,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520165527.png"></center>
-
 # [Bar - Bar_toolbox](http://gallery.pyecharts.org/#/Bar/bar_toolbox?id=bar-bar_toolbox)
 
 ```python
@@ -943,7 +962,6 @@ c = (
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520165921.png"></center>
-
 # [Bar - Bar_base_with_custom_background_image](http://gallery.pyecharts.org/#/Bar/bar_base_with_custom_background_image?id=bar-bar_base_with_custom_background_image)
 
 ```python
@@ -979,9 +997,6 @@ c.render("bar_base_with_custom_background_image.html")
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200520210611.png"></center> 
-
-
-
 # [Bar - Bar_base_with_animation](http://gallery.pyecharts.org/#/Bar/bar_base_with_animation?id=bar-bar_base_with_animation)
 
 ```python
