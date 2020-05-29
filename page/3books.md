@@ -17,7 +17,7 @@ type: page
 
 
 <table width="100%"  >
-        <tr align="center">           
+        <tr >           
            <th  width="10%" align="center">编号</th>
            <th  width="30%" align="center"> 书名 </th>
             <th  width="20%" align="center">作者</th>
