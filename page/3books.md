@@ -20,13 +20,11 @@ type: page
             <th  width="20%">备注 </td>
         </tr>
 	</thead>
-	<tbody>
     	<tr align="center">           
            <td  width="10%">编号 </td><td  width="30%">书名 </td>
            <td  width="20%">作者 </td><td  width="20%">读完时间 </td>
             <td  width="20%">备注 </td>
         </tr>
-     </tbody>
 </table>
 
 
