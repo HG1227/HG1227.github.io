@@ -12,12 +12,22 @@ type: page
 
 ##  **2020 年**
 
-| 编号 |   书名   | 作者 |     读完时间      | 备注 |
-| -- | ---------- | ------ | ------------ | ------ |
-|  1   | 《态度》 | 吴军 | 2020 年 1 月 28日 |  无  |
-|      |          |      |                   |      |
-
-
+<table width="100%"  >
+    <thead>
+        <tr align="center">           
+           <th  width="10%">编号 </th><th  width="30%">书名 </th>
+           <th  width="20%">作者 </td><th  width="20%">读完时间 </th>
+            <th  width="20%">备注 </td>
+        </tr>
+	</thead>
+	<tbody>
+    	<tr align="center">           
+           <td  width="10%">编号 </td><td  width="30%">书名 </td>
+           <td  width="20%">作者 </td><td  width="20%">读完时间 </td>
+            <td  width="20%">备注 </td>
+        </tr>
+     </tbody>
+</table>
 
 
 
