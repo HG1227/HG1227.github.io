@@ -12,23 +12,6 @@ type: page
 
 ##  **2020 年**
 
-<table width="100%"  >
-        <tr align="center">           
-           <th  width="10%">编号 </th><th  width="30%">书名 </th>
-           <th  width="20%">作者 </td><th  width="20%">读完时间 </th>
-            <th  width="20%">备注 </td>
-        </tr>
-    	<tr align="center">           
-           <td  width="10%">1 </td><td  width="30%">书名 </td>
-           <td  width="20%">作者 </td><td  width="20%">读完时间 </td>
-            <td  width="20%">备注 </td>
-        </tr>
-</table>
-
-
-
-
-
 
 
 
