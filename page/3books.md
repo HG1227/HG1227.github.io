@@ -12,21 +12,25 @@ type: page
 
 ##  **2020 年**
 
-
 <table border="1" width="100%" " >
         <tr align="center">           
-           <th  width="10%">编号</th>  <th  width="25%">书名</th><th  width="20%"> 作者</th>  <th  width="15%"> 读完时间</th>	<th  > 备注</th> 
-       </tr>
-               <tr align="center">           
+           <th  width="10%">编号</th>  <th  width="25%">书名</th><th  width="20%"> 作者</th>  <th  width="15%"> 读完时间</th>	<th  > 备注</th>  </tr>
+         <tr align="center">           
            <td  width="10%">1</td>
            <td  width="25%">《态度》</td>
            <td  width="20%"> 吴军</td>
             <td  width="15%"> 读完时间</td>
-			<td  > 备注</td> 
-       </tr>
+			<td  > 备注</td> </tr>
 </table>
 
 
+
+<table width="100%"  >
+        <tr align="center">           
+           <td  width="30%"><a href="https://zhaoda.net/2015/11/09/gitbook-plugins/" target="_blank">Gitbook 常用插件</a> </td>
+           <td  width="70%"> Gitbook 的使用和常用插件 -赵达 </td>
+        </tr>
+</table>
 
 
 
