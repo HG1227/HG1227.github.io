@@ -12,7 +12,7 @@ type: page
 
 ##  **2020 年**
 
-<div >
+
 <table border="1" width="100%" " style="margin:auto">
         <tr align="center">           
            <th  width="10%">编号</th>
@@ -29,7 +29,7 @@ type: page
 			<td  width="20%"> 备注</td> 
        </tr>
 </table>
-</div>
+
 
 
 
