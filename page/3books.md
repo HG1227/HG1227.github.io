@@ -31,6 +31,20 @@ type: page
              <td  width="20%">读完时间</td>
              <td  width="20%">无</td>
         </tr>
+             <tr align="center">           
+           <td  width="10%">1</td>
+           <td  width="30%"> 《态度》 </td>
+             <td  width="20%">吴军</td>
+             <td  width="20%">读完时间</td>
+             <td  width="20%">无</td>
+        </tr>
+             <tr align="center">           
+           <td  width="10%">1</td>
+           <td  width="30%"> 《态度》 </td>
+             <td  width="20%">吴军</td>
+             <td  width="20%">读完时间</td>
+             <td  width="20%">无</td>
+        </tr>
 </table>
 
 
