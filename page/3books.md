@@ -12,31 +12,8 @@ type: page
 
 ##  **2020 年**
 
-<table width="100%"  >
-        <tr align="center">           
-           <th align="center" width="10%">  编号</th>
-           <th align="center" width="30%">   书名</th>
-            <th align="center" width="20%">    作者</th>
-            <th align="center" width="20%">  读完时间</th>
-            <th align="center" width="20%">  备注</th>
-        </tr >
-    	<tr align="center">   
-           <td  width="10%">1</td>
-           <td  width="30%">《态度》</td>
-            <td  width="20%">吴军</td>
-            <td  width="20%">2020 年 1 月 20 日</td>
-            <td  width="20%">无</td>
-    	</tr >
-</table>
 
-
-
-
-
-
-
-
-1. 《态度》—— 吴军 
+1. 《态度》—— 吴军  
 2. 《见识》—— 吴军
 3. 《金字塔原理》——芭芭拉·明托 （Barbara Minto）
 4. 《金色梦乡》—— 伊坂幸太郎
