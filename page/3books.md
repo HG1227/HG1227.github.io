@@ -12,7 +12,28 @@ type: page
 
 ##  **2020 年**
 
-- [x] wqwq
+<div >
+<table border="1" width="100%" " style="margin:auto">
+        <tr align="center">           
+           <th  width="10%">编号</th>
+           <th  width="25%">书名</th>
+           <th  width="20%"> 作者</th>
+            <th  width="15%"> 读完时间</th>
+			<th  width="20%"> 备注</th> 
+       </tr>
+               <tr align="center">           
+           <td  width="10%">1</td>
+           <td  width="25%">《态度》</td>
+           <td  width="20%"> 吴军</td>
+            <td  width="15%"> 读完时间</td>
+			<td  width="20%"> 备注</td> 
+       </tr>
+</table>
+</div>
+
+
+
+
 
 1. 《态度》—— 吴军
 2. 《见识》—— 吴军
