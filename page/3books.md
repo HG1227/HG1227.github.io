@@ -18,11 +18,11 @@ type: page
 
 <table width="100%"  >
         <tr align="center">           
-           <th  width="10%">编号</th>
-           <th  width="30%"> 书名 </th>
-            <th  width="20%">作者</th>
-            <th  width="20%">读完时间</th>
-            <th  width="20%">备注</th>
+           <th  width="10%" align="center">编号</th>
+           <th  width="30%" align="center"> 书名 </th>
+            <th  width="20%" align="center">作者</th>
+            <th  width="20%" align="center">读完时间</th>
+            <th  width="20%" align="center">备注</th>
         </tr>
          <tr align="center">           
            <td  width="10%">1</td>
