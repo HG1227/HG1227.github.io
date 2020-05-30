@@ -14,15 +14,13 @@ type: page
 
 
 
-<i class="icon-weibo"></i> 
 
 
+##  <i class="far fa-calendar  fa-1x "></i>  **2020 年**    
 
-##  <i class="far fa-spinner fa-spin fa-1x "></i>  **2020 年**    
 
-
-1. 《态度》—— 吴军  ☑
-2. 《见识》—— 吴军 ☑
+1. 《态度》—— 吴军  
+2. 《见识》—— 吴军 
 3. 《金字塔原理》——芭芭拉·明托 （Barbara Minto）
 4. 《金色梦乡》—— 伊坂幸太郎
 5. 《你当像鸟飞往你的山》——\[美\] 塔拉·韦斯特弗
@@ -32,7 +30,7 @@ type: page
 
 <br>
 
-## **2020年之前**
+## <i class="far fa-calendar  fa-1x "></i> **2020年之前**
 
 这部分是之前阅读过的部分书籍，有的记不得了。
 
