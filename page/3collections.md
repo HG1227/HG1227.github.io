@@ -22,7 +22,7 @@ type: page
 
 <br />
 
- <a href="https://hg1227.github.io/gitbook_use/" target="_blank">**gitbook-use**</a>   
+ <a href="http://gitbook.wiliam.me/" target="_blank">**gitbook-use**</a>   
 
 
 
