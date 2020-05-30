@@ -17,7 +17,7 @@ type: page
 
 
 
-##  <i class="far fa-cog fa-spin fa-1x "></i>  **2020 年**    
+##  <i class="far fa-cog fa-spin fa-1x " aria-hidden="true"></i>  **2020 年**    
 
 
 1. 《态度》—— 吴军  ☑
