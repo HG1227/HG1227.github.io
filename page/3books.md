@@ -8,13 +8,25 @@ type: page
 
 * content
 {:toc}
-<p >&#9800</p>  
+
+
+
+<head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+</head> 
+
+
+<i class="far fa-address-card fa-2x"></i>
+
+
+
 
 ##  **2020 年**    
 
 
 1. 《态度》—— 吴军  ☑
-2. 《见识》—— 吴军
+2. 《见识》—— 吴军 ☑
 3. 《金字塔原理》——芭芭拉·明托 （Barbara Minto）
 4. 《金色梦乡》—— 伊坂幸太郎
 5. 《你当像鸟飞往你的山》——\[美\] 塔拉·韦斯特弗
@@ -74,8 +86,6 @@ type: page
 44. 《水浒传》—— 施耐庵
 
 还有一部分想不起来了 ！
-
-
 
 
 
