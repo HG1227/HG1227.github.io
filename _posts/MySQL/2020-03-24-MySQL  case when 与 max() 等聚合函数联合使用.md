@@ -1,9 +1,10 @@
+---
 layout: post
-title:  MySQL  case when 与 max() 等聚合函数联合使用
+title:  MySQL case when 与 max() 等聚合函数联合使用
 date:   2020-03-24
 categories: MySQL
 tags:  MySQL
-
+---
 * content
 {:toc}
 MySQL `case when` 实现行转列时为什么要用 `max()` 或者其他聚合函数
@@ -20,7 +21,7 @@ MySQL `case when` 实现行转列时为什么要用 `max()` 或者其他聚合�
 
 创建表
 
-```mysql
+```sql
 create table tb(
     姓名 varchar(10),
     课程 varchar(3),
@@ -41,7 +42,7 @@ insert into tb values ('张三','语文', 74),
 
 sql 语句1：
 
-```mysql
+```sql
 SELECT `姓名`,
        (CASE `课程` WHEN '语文' THEN `分数` ELSE 0 END) '语文',
 		(CASE `课程` WHEN '数学' THEN `分数` ELSE 0 END) '数学',
@@ -55,7 +56,7 @@ GROUP BY `姓名`;
 
 sql 语句2：
 
-```mysql
+```sql
 SELECT `姓名`,
        MAX(CASE `课程` WHEN '语文' THEN `分数` ELSE 0 END) '语文',
 		MAX(CASE `课程` WHEN '数学' THEN `分数` ELSE 0 END) '数学',
@@ -65,16 +66,13 @@ GROUP BY `姓名`;
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200603093339.png"/></center>
-
-
-
 解析：
 
 第一种  不加 `max`的时候
 
 那么在不分组之前 SQL 为：
 
-```mysql
+```sql
 SELECT `姓名`,
        CASE `课程` WHEN '语文' THEN `分数` ELSE 0 END '语文',
 		CASE `课程` WHEN '数学' THEN `分数` ELSE 0 END '数学',
@@ -95,7 +93,7 @@ FROM TB;
 
 分解下 SQL，执行`MAX`内`CASE WHEN` 及未`GROUP BY`  `姓名`时SQL：
 
-```mysql
+```sql
 SELECT `姓名`,
        CASE `课程` WHEN '语文' THEN `分数` ELSE 0 END '语文',
 		CASE `课程` WHEN '数学' THEN `分数` ELSE 0 END '数学',
@@ -108,7 +106,7 @@ FROM TB;
 
 完整的第二个 SQL：
 
-```mysql
+```sql
 SELECT `姓名`,
        MAX(CASE `课程` WHEN '语文' THEN `分数` ELSE 0 END) '语文',
 		MAX(CASE `课程` WHEN '数学' THEN `分数` ELSE 0 END) '数学',

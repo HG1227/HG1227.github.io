@@ -25,7 +25,7 @@ tags:  MySQL
 
 准备测试数据：
 
-```mysql
+```sql
 create table Student
 (
  id int,
@@ -49,12 +49,11 @@ insert into Student values  (1,1,88),
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602221117.png"/></center>
 
-
 # 一、分区函数`Partition By `的与`row_number()` 的用法
 
 1、不分班按学生成绩排名
 
-```mysql
+```sql
 select *,row_number() over(order by Score desc) as Sequence 
 from Student;
 -- 让数据先按班级进行分组，在每个组内进行排序
@@ -63,7 +62,7 @@ from Student;
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602221501.png"/></center>
 2、分班后按学生成绩排名
 
-```mysql
+```sql
 
 select *, 
        row_number() over (partition by Grade order by Score desc ) Sequence
@@ -73,7 +72,7 @@ from student;
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602222342.png"/></center>
 3、获取每个班的前 2 (几)名
 
-```mysql
+```sql
 select * from (
               select *, row_number() over (
                   partition by Grade order by Score desc
@@ -92,7 +91,7 @@ where T.Sequence<=2;
 
 1、分班后按学生成绩排名 该语句是对分数相同的记录进行了同一排名，例如：两个80分的并列第2名，第3名就没有了
 
-```mysql
+```sql
 select *,
        rank() over(partition by Grade order by Score desc) as Sequence
 from Student;
@@ -100,10 +99,9 @@ from Student;
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602223309.png"/></center>
 
-
 2、获取每个班的前2(几)名 该语句是对分数相同的记录进行了同一排名，例如：两个80分的并列第2名，第4名就没有了
 
-```mysql
+```sql
 select *
 from (
      select *,
@@ -114,7 +112,6 @@ where T.Sequence<=2;
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602223737.png"/></center>
-
 
 # 参考
 

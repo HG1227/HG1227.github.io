@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  windows下启动mysql服务的命令行启动和手动启动方法
+title:  windows 下启动mysql服务的命令行启动和手动启动方法
 date:   2020-4-21
 categories: MySQL
 tags:  MySQL

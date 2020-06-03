@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  MySQL 四大排名函数(ROW_NUMBER、RANK、DENSE_RANK、NTILE)
+title:  MySQL 四大排名函数ROW_NUMBER、RANK、DENSE_RANK、NTILE
 date:   2020-03-22
 categories: MySQL
 tags:  MySQL
@@ -17,7 +17,7 @@ Sql四大排名函数(ROW_NUMBER、RANK、DENSE_RANK、NTILE)
 
 创建数据表：
 
-```mysql
+```sql
 CREATE TABLE rk
 (
     ID         int  NOT NULL,
@@ -39,7 +39,7 @@ insert into rk values (1, 1, 100, '2015-01-07 17:18:22.450'),
 
 `row_number` 的用途的非常广泛，排序最好用他，一般可以用来实现web程序的分页，他会为查询出来的每一行记录生成一个序号，依次排序且不会重复，注意使用`row_number` 函数时必须要用`over` 子句选择对某一列进行排序才能生成序号。row_number用法实例:
 
-```mysql
+```sql
 select * ,row_number() over (order by SubTime desc ) row_num 
 from rk;
 ```
@@ -49,7 +49,7 @@ from rk;
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602212937.png"/></center>
 图中的 row_num 列就是 `row_number` 函数生成的序号列，其基本原理是先使用`over`子句中的排序语句对记录进行排序，然后按照这个顺序生成序号。over子句中的`order by`子句与SQL语句中的`order by`子句没有任何关系，这两处的`order by `可以完全不同，如以下sql，over子句中根据SubTime降序排列，Sql语句中则按TotalPrice降序排列。
 
-```mysql
+```sql
 select * ,row_number() over (order by SubTime desc ) row_num
 from rk
 order by TotalPrice desc ;
@@ -64,7 +64,7 @@ order by TotalPrice desc ;
 
 简单来说 `rank` 函数就是对查询出来的记录进行排名，与 `row_number` 函数不同的是，`rank` 函数考虑到了`over` 子句中排序字段值相同的情况，如果使用rank函数来生成序号，over子句中排序字段值相同的序号是一样的，后面字段值不相同的序号将跳过相同的排名号排下一个，也就是相关行之前的排名数加一，可以理解为根据当前的记录数生成序号，后面的记录依此类推。
 
-```mysql
+```sql
 select  *, rank() over (order by UserId) rankk
 from rk;
 ```
@@ -76,7 +76,7 @@ from rk;
 
 `dense_rank`函数的功能与 `rank` 函数类似，`dense_rank` 函数在生成序号时是连续的，而`rank` 函数生成的序号有可能不连续。`dense_rank` 函数出现相同排名时，将不跳过相同排名号，`rank`值紧接上一次的rank值。在各个分组内，rank()是跳跃排序，有两个第一名时接下来就是第四名，`dense_rank()`是连续排序，有两个第一名时仍然跟着第二名。
 
-```mysql
+```sql
 select *, dense_rank() over (order by UserId) dk
 from rk;
 ```
@@ -88,7 +88,7 @@ from rk;
 
 `ntile` 函数可以对序号进行分组处理，将有序分区中的行分发到指定数目的组中。 各个组有编号，编号从一开始。 对于每一个行，`ntile` 将返回此行所属的组的编号。这就相当于将查询出来的记录集放到指定长度的数组中，每一个数组元素存放一定数量的记录。`ntile` 函数为每条记录生成的序号就是这条记录所有的数组元素的索引（从1开始）。也可以将每一个分配记录的数组元素称为“桶”。`ntile`函数有一个参数，用来指定桶数。
 
-```mysql
+```sql
 select *, ntile(4) over (order by SubTime desc ) nt
 from rk;
 ```
@@ -114,7 +114,7 @@ from rk;
 
 验证
 
-```mysql
+```sql
 select nt,count(ID) recordCount
 from (
      select *, ntile(4) over (order by SubTime desc) nt
