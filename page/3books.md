@@ -17,7 +17,7 @@ type: page
 
 
 
-## <i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i> 想读的书 
+## <i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>  想读的书 
 
 
 
