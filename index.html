@@ -9,6 +9,8 @@ layout: default
         <hr>
         <ul>
             {% for post in paginator.posts %}
+			{% for categ in post.categories %}
+			{% if categ != "notes" %}
               <li>
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
@@ -41,6 +43,9 @@ layout: default
                 </div>
                 <hr>
               </li>
+			  
+			 {% endif %}
+			{% endfor %}
             {% endfor %}
         </ul>
 
