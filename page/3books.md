@@ -2,7 +2,7 @@
 layout: page
 title: Books
 permalink: / book/
-icon: fa-book
+icon: book
 type: page
 ---
 
@@ -17,7 +17,7 @@ type: page
 
 
 
-##  <i class="far fa-calendar  fa-1x "></i>  **2020 年**    
+##  <i class="far calendar  fa-1x "></i>  **2020 年**    
 
 | 编号 |          书名          | 豆瓣评分 |                             作者                             |     读完时间     | 备注 |
 | :--: | :--------------------: | :------: | :----------------------------------------------------------: | :--------------: | :--: |
