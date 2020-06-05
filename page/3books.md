@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books
+title: 读书记录
 permalink: /book/
 icon: book
 type: page
@@ -8,7 +8,12 @@ type: page
 
 * content
 {:toc}
-
+<center>
+<img   src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200605085414.webp"  
+     height="100%" 
+     width="80%"
+     title="图片来源：Adobe stock">
+</center>
 
 
 
