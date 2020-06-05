@@ -1,9 +1,7 @@
 ---
 layout: default
 title: B
-permalink: /mo/
 icon: book
-type: page
 ---
 
 <!-- <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1> -->
@@ -12,11 +10,11 @@ type: page
 
 <div class="page clearfix" index>
     <div class="left">		
-        <h1>Moooo </h1>        	
+        <h1>Moooo12 </h1>        	
         <hr>
         <ul>
             {% for post in site.posts %}
-			{% if posts.book %}
+			
               <li>
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
@@ -49,7 +47,7 @@ type: page
                 </div>
                 <hr>
               </li>
-			  {% endif %}
+			  
             {% endfor %}
         </ul>
     </div>
