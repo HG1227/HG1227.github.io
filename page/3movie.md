@@ -1,6 +1,6 @@
 ---
 layout: movie
-title: Books
+title: Movies
 permalink: /movie/
 icon: youtube-play
 type: page
