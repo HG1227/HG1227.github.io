@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Book
+title:  Book
 permalink: /book/
 icon: book
 type: page
