@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 读书记录
+title: Book
 permalink: /book/
 icon: book
 type: page
