@@ -61,7 +61,7 @@ links:
   - name:         Tags
     url:          /Tags
     external:     false
-  - name:         momo
+  - name:         notes
     url:          /notes
     external:     false
 
