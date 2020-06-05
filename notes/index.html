@@ -12,10 +12,11 @@ type: page
 
 <div class="page clearfix">
     <div class="left">		
-        <h1>Movies </h1>        	
+        <h1>Mo </h1>        	
         <hr>
         <ul>
             {% for post in site.posts %}
+			{% if posts.book%}
               <li>
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
@@ -48,6 +49,7 @@ type: page
                 </div>
                 <hr>
               </li>
+			  {% endif %}
             {% endfor %}
         </ul>
     </div>
