@@ -1,7 +1,7 @@
 ---
 layout: default
-title: B
-icon: book
+title: Movie
+icon: youtube-play
 type: page
 ---
 
@@ -54,6 +54,31 @@ type: page
 			  
             {% endfor %}
         </ul>
+		
+		<div class="pagination">	
+          {% if site.previous_page %}
+		  
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="{{ site.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+		  {% else %}
+		  
+            <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
+            <span class="previous disable"><i class="fa fa-angle-left"></i></span>
+          {% endif %}
+          <span class="page_number ">{{ site.page }}/{{ site.total_pages }}</span>
+          {% if site.next_page %}
+		  
+            <a href="{{ site.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="{{ site.baseurl }}/page{{ site.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+		  {% else %}
+		  
+            <span class="next disable"><i class="fa fa-angle-right"></i></span>
+            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
+          {% endif %}
+		  
+        </div>
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">
