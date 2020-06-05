@@ -58,6 +58,9 @@ links:
   - name:         Categories
     url:          /Categories
     external:     false
+  - name:         Tags
+    url:          /Tags
+    external:     false
   - name:         momo
     url:          /notes
     external:     false
