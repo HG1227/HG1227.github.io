@@ -51,7 +51,10 @@ kramdown:
 mathjax:
   enable: true
 
-
+links:
+  - name:         momo
+    url:          /notes
+    external:     false
 
 # url
 category_dir: category/
