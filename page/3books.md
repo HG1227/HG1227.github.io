@@ -19,11 +19,11 @@ type: page
 ##  <i class="far fa-calendar  fa-1x "></i>  **2020 年**    
 
 
-1. 《态度》—— 吴军   
+1. 《态度》—— 吴军  
 2. 《见识》—— 吴军 
-3. 《金字塔原理》——芭芭拉·明托 （Barbara Minto）
+3. 《金字塔原理》——芭芭拉·明托 
 4. 《金色梦乡》—— 伊坂幸太郎
-5. 《你当像鸟飞往你的山》——\[美\] 塔拉·韦斯特弗
+5. 《你当像鸟飞往你的山》——\[美\] 塔拉·韦斯特弗 
 6. 《统计学大师之路：乔治·博克斯回忆录》—— [[英\] 乔治 • 博克斯（George E.P. Box）](https://book.douban.com/search/乔治 • 博克斯)
 
 ----
@@ -78,8 +78,9 @@ type: page
 42. 《虹》—— 矛盾
 43. 《春蚕》—— 矛盾
 44. 《水浒传》—— 施耐庵
+45. ......
 
-还有一部分想不起来了 ！
+
 
 <head> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
