@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-permalink: /book/
+permalink: 
 icon: book
 type: page
 ---
