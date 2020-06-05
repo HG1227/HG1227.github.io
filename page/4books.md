@@ -17,12 +17,14 @@ type: page
 
 
 
-## <i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>  想读的书 
+# <i class="fa fa-refresh" aria-hidden="true"></i>  想读的书 
 
 
 
 
-##  <i class="fa fa-calendar  fa-1x "></i>  **2020 年**    
+#  <i class="fa fa-calendar  fa-1x "></i>  **2020 年**    
+
+##  <i class="fa fa-book" aria-hidden="true"></i> 读书
 
 | 编号 |          书名          | 豆瓣评分 |                             作者                             |     读完时间     | 备注 |
 | :--: | :--------------------: | :------: | :----------------------------------------------------------: | :--------------: | :--: |
@@ -32,11 +34,17 @@ type: page
 |  4   | 《你当像鸟飞往你的山》 |   8.9    | [[美\] 塔拉·韦斯特弗](https://book.douban.com/search/塔拉·韦斯特弗) | 2020 年 6 月 2日 |      |
 |  5   |     《金字塔原理》     |   8.1    |                         芭芭拉·明托                          |                  |      |
 
+##  <i class="fa fa-film" aria-hidden="true"></i> 电影
+
+
+
+## <i class="fa fa-map-marker" aria-hidden="true"></i> 旅行
+
 ----
 
 <br>
 
-## <i class="fa fa-calendar  fa-1x "></i> **2020年之前**
+# <i class="fa fa-calendar  fa-1x "></i> **2020年之前**
 
 这部分是之前阅读过的部分书籍，有的记不得了。
 
