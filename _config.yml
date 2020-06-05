@@ -52,6 +52,12 @@ mathjax:
   enable: true
 
 links:
+  - name:         Archives
+    url:          /Archives
+    external:     false
+  - name:         Categories
+    url:          /Categories
+    external:     false
   - name:         momo
     url:          /notes
     external:     false
