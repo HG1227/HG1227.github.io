@@ -15,8 +15,8 @@ type: page
         <hr>
         <ul>
             {% for post in site.posts %}
-			
-			{% if post.book == "true" %}
+			{% for categ in post.categories %}
+			{% if categ == "notes" %}
               <li>
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
@@ -50,7 +50,7 @@ type: page
                 <hr>
               </li>
 			{% endif %}
-
+			{% endfor %}
 			  
             {% endfor %}
         </ul>
