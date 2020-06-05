@@ -1,8 +1,8 @@
 ---
-layout: book
+layout: movie
 title: Books
-permalink: / book/
-icon: book
+permalink: /movie/
+icon: youtube-play
 type: page
 ---
 
