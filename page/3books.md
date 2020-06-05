@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Books
-permalink: 
-icon: book
+permalink: / book/
+icon: fa-book
 type: page
 ---
 
