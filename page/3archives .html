@@ -1,9 +1,5 @@
 ---
 layout: default
-title: M
-permalink: /mo/
-icon: youtube-play 
-type: page
 ---
 
 <!-- <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1> -->
@@ -15,7 +11,7 @@ type: page
         <h1>Movies </h1>        	
         <hr>
         <ul>
-          {% for post in site.notes  %}
+          {% for post in paginator.notes  %}
 		   {% for categ in post.categories %}
 			{% if categ == "notes" %}
             {% unless post.next %}
