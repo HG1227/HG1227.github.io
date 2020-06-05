@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Books
 permalink: / book/
 icon: book
