@@ -64,6 +64,12 @@ links:
   - name:         notes
     url:          /notes
     external:     false
+  - name:         Books
+    url:          /Books
+    external:     false
+  - name:         About
+    url:          /About
+    external:     false
 
 # url
 category_dir: category/
