@@ -7,7 +7,7 @@ tags:  MySQL
 ---
 * content
 {:toc}
-# `GROUP_CONCAT` 函数
+## `GROUP_CONCAT` 函数
 
 `GROUP_CONCAT(expr) `函数会从 expr 中连接所有非 NULL 的字符串。如果没有非 NULL 的字符串，那么它就会返回 NULL。
 
@@ -27,10 +27,9 @@ Separator 是一个字符串值，它被用于插入到结果值中。缺省为�
 
 
 
-## 1 使用示例
+### 1 使用示例
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200603220119.png"/></center>
-
 ```sql
 select GROUP_CONCAT(c_id) id
 from score
@@ -38,7 +37,6 @@ where s_id = '01';
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200603220202.png"/></center>
-
 
 
 【2】可以使用 `DISTINCT` 过滤重复的值，也可以加入 `ORDER BY` 对值进行排序，还可以使用 `SEPARATOR` 指定分隔符：
@@ -50,7 +48,6 @@ where s_id = '01';
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200603220631.png"/></center>
-
 如果将多个字段进行连接，会首先将这几个字段连接，然后再用指定的分隔符连接前面拼接好的字符串
 
 ```sql
@@ -62,8 +59,7 @@ where s_id = '01';
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200603221810.png"/></center>
 
 
-
-## 2 最大值限制
+### 2 最大值限制
 
 `GROUP_CONCAT() `是有最大长度限制的，默认值是 1024。
 
@@ -86,7 +82,7 @@ SELECT GROUP_CONCAT(a.REGION_ID) FROM t_region a;
 
 
 
-# `CONCAT()`函数
+## `CONCAT()`函数
 
 CONCAT（）函数用于将多个字符串连接成一个字符串。
 使用数据表Info作为示例，其中SELECT id,name FROM info LIMIT 1;的返回结果为
@@ -157,8 +153,7 @@ where s_id='01';
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200603222312.png"/></center>
 
 
-
-# 参考
+## 参考
 
 - <a href="https://segmentfault.com/a/1190000004844113" target="_blank">mysql中函数CONCAT及GROUP_CONCAT的使用</a>
 - <a href="https://www.jianshu.com/p/447eb01eebb2" target="_blank">MySQL 的 GROUP_CONCAT 函数详解</a>

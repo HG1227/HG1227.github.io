@@ -15,9 +15,9 @@ SQL 提供了多种对数据进行过滤的方式，包括 `WHERE`、`HAVING`以
 
 
 
-# WHERE 和 HAVING、ON 有什么区别？
+## WHERE 和 HAVING、ON 有什么区别？
 
-## WHERE 与 HAVING
+### WHERE 与 HAVING
 
 
 
@@ -30,7 +30,7 @@ SQL 提供了多种对数据进行过滤的方式，包括 `WHERE`、`HAVING`以
 
 
 
-## WHERE 与 ON
+### WHERE 与 ON
 
 当查询涉及多个表的关联时，我们既可以使用`WHERE`子句也可以使用`ON`子句指定连接条件和过滤条件。这两者之间的主要区别在于：
 

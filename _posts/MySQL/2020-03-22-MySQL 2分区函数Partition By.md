@@ -48,8 +48,7 @@ insert into Student values  (1,1,88),
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602221117.png"/></center>
-
-# 一、分区函数`Partition By `的与`row_number()` 的用法
+## 一、分区函数`Partition By `的与`row_number()` 的用法
 
 1、不分班按学生成绩排名
 
@@ -87,7 +86,7 @@ where T.Sequence<=2;
 
 
 
-# 二、分区函数`Partition By` 与排序 `rank()`的用法
+## 二、分区函数`Partition By` 与排序 `rank()`的用法
 
 1、分班后按学生成绩排名 该语句是对分数相同的记录进行了同一排名，例如：两个80分的并列第2名，第3名就没有了
 
@@ -98,7 +97,6 @@ from Student;
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602223309.png"/></center>
-
 2、获取每个班的前2(几)名 该语句是对分数相同的记录进行了同一排名，例如：两个80分的并列第2名，第4名就没有了
 
 ```sql
@@ -112,7 +110,6 @@ where T.Sequence<=2;
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602223737.png"/></center>
-
 # 参考
 
 - <a href="https://www.cnblogs.com/linJie1930906722/p/6036053.html" target="_blank">分区函数Partition By的与row_number()的用法以及与排序rank()的用法详解(获取分组(分区)中前几条记录</a>

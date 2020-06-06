@@ -21,7 +21,7 @@ windows下启动mysql服务的命令行启动和手动启动方法
 
 
 
-# 图形界面下启动mysql服务。
+## 图形界面下启动mysql服务。
 
 在图形界面下启动mysql服务的步骤如下：
 
@@ -39,7 +39,7 @@ windows下启动mysql服务的命令行启动和手动启动方法
 
 关闭的话，点击这个小窗口的停止按钮即可进行服务的关闭。
 
-# 命令行下启动mysql服务。
+## 命令行下启动mysql服务。
 
 下面讲通过命令行的方式启动mysql服务：
 
@@ -67,7 +67,7 @@ net stat mysql （对应的服务关闭命令为 net stop mysql）
 
 
 
-# 在git bash运行mysql
+## 在git bash运行mysql
 
 ```
 $ winpty mysql -u root
@@ -77,7 +77,7 @@ $ winpty mysql -u root
 
 
 
-# 参考
+## 参考
 
 
 
