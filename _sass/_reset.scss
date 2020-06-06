@@ -56,14 +56,17 @@ h1 {
 	font-weight: bold;
 }
 h2 {
-	
+	background-color:#efefda;
+	font-weight: bold;
     font-size: 26px;
 	color: #336699;
     border-bottom: 1px solid #eee;
     margin: 30px 0 25px;
 }
 h3 {
+	font-weight: bold;
     font-size: 23px;
+	color: #336699;
     margin: 50px 0 20px;
 }
 h4 {
@@ -72,10 +75,12 @@ h4 {
 }
 h5 {
     font-size: 17px;
+	color: #336699;
     margin: 20px 0 10px;
 }
 h6 {
     font-size: 16px;
+	color: #336699;
     margin: 10px 0 5px;
 }
 blockquote {
