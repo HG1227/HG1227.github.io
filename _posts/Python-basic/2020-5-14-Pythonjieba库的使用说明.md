@@ -21,7 +21,7 @@ tags:  jieba
 
 
 
-# jieba 分词的原理     
+## jieba 分词的原理     
 
 Jieba分词依靠中文词库
 
@@ -30,9 +30,9 @@ Jieba分词依靠中文词库
 
 - 除了分词，用户还可以添加自定义的词组
 
-# jieba 库使用说明
+## jieba 库使用说明
 
-## (1)、`jieba` 分词的三种模式
+### (1)、`jieba` 分词的三种模式
 
 **精确模式、全模式、搜索引擎模式**
 
@@ -41,7 +41,7 @@ Jieba分词依靠中文词库
 
 - **搜索引擎模式**：在精确模式基础上，对长词再次切分
 
-## (2)、`jieba`库常用函数
+### (2)、`jieba`库常用函数
 
 <center>
 <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514203254.png">
@@ -49,7 +49,7 @@ Jieba分词依靠中文词库
 
 
 
-### `jieba.cut()`
+#### `jieba.cut()`
 
 返回的是一个迭代器。参数`cut_all`是`bool`类型，默认为False，即精确模式，当为True时，则为全模式
 
@@ -59,12 +59,12 @@ Jieba分词依靠中文词库
 
 
 
-### `jieba.lcut()` 
+#### `jieba.lcut()` 
 
 返回的是列表。
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200514204703.png"></center>
-### `jieba.cut_for_search()`
+#### `jieba.cut_for_search()`
 
 是搜索引擎模式
 
@@ -145,7 +145,7 @@ print('/'.join(words))
 
 
 
-# 利用jieba库统计三国演义中人物的出场次数
+## 利用jieba库统计三国演义中人物的出场次数
 
 ```python
 import  jieba
@@ -176,7 +176,7 @@ for i in range(15):
 
 
 
-# 参考
+## 参考
 
 1. <a href="https://www.cnblogs.com/wkfvawl/p/9487165.html" blank="">Python jieba库的使用说明</a>  
 2. <a href="https://blog.csdn.net/zhuzuwei/article/details/80491349" blank="">自然语言处理5：jieba分词详解全模式，精确模式和搜索引擎模式</a> 
