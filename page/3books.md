@@ -37,7 +37,7 @@ type: page
 |  5   |     《金字塔原理》     |   8.1    |                         芭芭拉·明托                          |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    |                                                              |                                                |
 |  6   |      《学会提问》      |   8.6    |         [布朗](https://book.douban.com/search/布朗)          |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    |                                                              |                                                |
 |  7   |     《苏菲的世界》     |   8.5    | [（挪威）乔斯坦·贾德](https://book.douban.com/search/乔斯坦·贾德) |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    |                                                              |                                                |
-|  8   |       《自控力》       |   8.2    | [[美\] 凯利·麦格尼格尔](https://book.douban.com/author/663904/) |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    |                                                              |                                                |
+|  8   |       《自控力》       |   8.2    | [[美\] 凯利·麦格尼格尔](https://book.douban.com/author/663904/) |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    | <a href="https://hg1227.github.io/2020/06/08/自控力/" target="_blank" class="fa fa-pencil-square-o" > </a> |                                                |
 
 ##  <i class="fa fa-film" aria-hidden="true"></i> 电影
 
