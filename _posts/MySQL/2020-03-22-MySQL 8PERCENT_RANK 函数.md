@@ -9,14 +9,6 @@ tags:  MySQL
 {:toc}
 
 
-
-
-
-
-
-
-
-
 ## PERCENT_RANK 函数
 
 这`PERCENT_RANK()`是一个[窗口函数](https://www.begtut.com/mysql/mysql-window-functions.html)，用于计算分区或结果集中行的[百分位数](https://en.wikipedia.org/wiki/Percentile_rank)。

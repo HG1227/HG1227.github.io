@@ -28,8 +28,11 @@
     }
     .left {
         ul {
-            >h2 {
-                color: #333;
+            h2 {
+                color: #336699;
+            }
+			>h3 {
+                color: #336699;
             }
             li {
                 color: #333;
@@ -63,19 +66,34 @@
     .page[post] {
         .left {
             font-size: 15px;
-            h2 {
-                font-size: 24px;
-            }
-            h3 {
-                font-size: 20px;
-            }
+			letter-spacing: 0.2px;
+			h2 {
+				background-color:#e8e8ff;
+				font-size: 30px;
+				color: #336699;
+				font-weight: bold;
+				border-bottom: 2px solid #eee;
+			}
+			h3 {
+				font-weight: bold;
+				font-size: 26px;
+				color: #336699;
+				
+				margin: 30px 0 25px;
+			}
             h4 {
+				font-weight: bold;
+				color: #336699;
                 font-size: 18px;
             }
             h5 {
+				font-weight: bold;
+				color: #336699;
                 font-size: 16px;
             }
             h6 {
+				font-weight: bold;
+				color: #336699;
                 font-size: 15px;
             }
         }
