@@ -1,4 +1,4 @@
-body, 
+body,
 html,
 div,
 header,
@@ -32,9 +32,7 @@ body {
     background-image: url(https://ooo.0o0.ooo/2016/06/20/5768c606cf9cb.jpg);
     position: relative;
     min-height: 100%;
-    padding-bottom: 170px;
-	letter-spacing: 0.2px;
-	
+    padding-bottom: 190px;
 }
 a {
     text-decoration: none;
@@ -51,41 +49,27 @@ hr {
 
 ///////////
 h1 {
-	
     font-size: 30px;
-	color: #336699;
-	font-weight: bold;
 }
 h2 {
-	background-color:#efefda;
-	font-weight: bold;
     font-size: 26px;
-	color: #336699;
     border-bottom: 1px solid #eee;
-    margin: 30px 0 25px;
+    margin: 50px 0 25px;
 }
 h3 {
-	font-weight: bold;
     font-size: 23px;
-	color: #336699;
-    margin: 30px 0 20px;
+    margin: 50px 0 20px;
 }
 h4 {
     font-size: 19px;
-	color: #336699;
-	font-weight: bold;
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
 }
 h5 {
     font-size: 17px;
-	color: #336699;
-	font-weight: bold;
-    margin: 15px 0 10px;
+    margin: 20px 0 10px;
 }
 h6 {
     font-size: 16px;
-	color: #336699;
-	font-weight: bold;
     margin: 10px 0 5px;
 }
 blockquote {
@@ -100,9 +84,9 @@ blockquote {
     }
 }
 table {
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
-    margin: 8px auto;
+    border-top: 2px solid #777;
+    border-bottom: 2px solid #777;
+    margin: 8px 0;
     border-collapse: collapse;
     thead {
         border-bottom: 1px solid #777;
@@ -111,7 +95,7 @@ table {
     }
     th {
         padding: 2px 10px;
-        text-align: center;
+        text-align: left;
     }
     tbody {
         tr {
@@ -122,11 +106,9 @@ table {
                 background-color: #e5eaed;
             }
         }
-		
     }
     td {
         padding: 2px 10px;
-		text-align: center;
     }
 }
 p {
