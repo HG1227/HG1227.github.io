@@ -9,6 +9,14 @@ tags:  MySQL
 {:toc}
 
 
+
+
+
+
+
+
+
+
 ## CUME_DIST() 函数
 
 ## CUME_DIST() 函数概述
@@ -61,7 +69,6 @@ VALUES ('Smith', 81),
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200604144719.png"/></center>
-
 
 查找结果集中分数的累积分布：
 

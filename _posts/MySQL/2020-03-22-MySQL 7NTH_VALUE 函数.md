@@ -9,6 +9,14 @@ tags:  MySQL
 {:toc}
 
 
+
+
+
+
+
+
+
+
 ## NTH_VALUE 函数
 
 这`NTH_VALUE()`是一个[窗口函数](https://www.begtut.com/mysql/mysql-window-functions.html)，允许您从有序行集中的第N行获取值。
