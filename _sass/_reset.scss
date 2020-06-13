@@ -135,7 +135,7 @@ p {
 img {
     max-width: 100%;
 }
-.zoom-img {
+zoom-img {
   position: fixed;
   left: 0;
   top: 0;
@@ -145,14 +145,14 @@ img {
   z-index: 5;
   display: none;
 }
-.zoom-img .source-img {
+zoom-img .source-img {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: zoom-out;
 }
-.zoom-img .source-btn {
+zoom-img .source-btn {
   position: absolute;
   bottom: 30px;
   left: 50%;
