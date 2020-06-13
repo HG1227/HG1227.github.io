@@ -2,6 +2,7 @@
 layout: default
 title: Notes
 icon: pencil-square-o 
+type: page
 ---
 
 <!-- <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1> -->
@@ -14,7 +15,7 @@ icon: pencil-square-o
         <small>这里是我建立的个人小天地哦 !  🤣🤣🤣</small>
         <hr>
         <ul>
-            {% for post in site.notes %}
+            {% for post in paginator.notes %}
 			{% for categ in post.categories %}
 			
               <li>
