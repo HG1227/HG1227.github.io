@@ -106,6 +106,24 @@ IRA是一款渐变风格的矢量插画素材网站，质量非常高，并且�
 
 可以说是全球最大的免费图片网站了。图多而且种类足够丰富。
 
+<a href="https://wallhaven.cc/" target="_blank">**wallhaven**</a>     （4k，8k）
+
+英文网站，有质量很高资源
+
+![wallhaven-x1wroo](https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200612200203.jpg)
+
+
+
+<a href="https://wall.alphacoders.com/?lang=Chinese" target="_blank">**wallpaper**</a>     （4k，8k） 
+
+支持中文：
+
+
+
+<a href="http://static.simpledesktops.com/uploads/desktops/2018/08/04/six.png" target="_blank">**简单桌面**</a>     （4k，8k） 
+
+![desktop](https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200612214054.png)
+
 
 
 ## 图片压缩
