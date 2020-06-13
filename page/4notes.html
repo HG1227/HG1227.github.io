@@ -15,7 +15,7 @@ type: page
         <small>这里是我建立的个人小天地哦 !  🤣🤣🤣</small>
         <hr>
         <ul>
-            {% for post in paginator.notes %}
+            {% for post in paginator._notes %}
 			{% for categ in post.categories %}
 			
               <li>
