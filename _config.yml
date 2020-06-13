@@ -76,6 +76,4 @@ gems:
     - jemoji
 #     - jekyll-mentions
 
-collections:
-    notes
-        output: true
+
