@@ -75,3 +75,7 @@ gems:
     - jekyll-feed
     - jemoji
 #     - jekyll-mentions
+
+collections:
+    notes
+        output: true
