@@ -62,17 +62,16 @@ excerpt_separator: "\n\n\n\n"
 
 # paginate
 plugins: [jekyll-paginate ]
-plugins: [jekyll-site ]
+
 paginate: 10
 port: 4000
 
 gems:
-    - jekyll-github-metadata
-    - rouge
+
 #     - jekyll-html-pipeline
-    - jekyll-paginate
+
     - jekyll-sitemap
-    - jekyll-feed
+
     - jemoji
 #     - jekyll-mentions
 
