@@ -68,9 +68,6 @@ port: 4000
 
 gems:
 
-#     - jekyll-html-pipeline
-
-    - jekyll-sitemap
 
     - jemoji
 #     - jekyll-mentions
