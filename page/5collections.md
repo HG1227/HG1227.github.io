@@ -45,7 +45,7 @@ type: page
 
 
 
-##  <i class="fa fa-bookmark-o" aria-hidden="true"></i> 电子书 
+##  📔  电子书 
 
 中文
 
@@ -81,7 +81,7 @@ type: page
 </table>
 
 
-## :chestnut:  颜色库
+## 🌰 颜色库
 
 - <a href="https://encycolorpedia.cn/cd5c5c" target="">Encycolorpedia</a>  
 

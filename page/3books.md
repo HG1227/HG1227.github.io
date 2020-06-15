@@ -102,15 +102,3 @@ type: page
 45. ......
 
 
-
-
-
-
-
-
-
-
-
-:pencil:
-
-[🌰](https://emojipedia.org/chestnut/) 
