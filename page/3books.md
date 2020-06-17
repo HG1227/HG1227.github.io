@@ -22,7 +22,7 @@ type: page
 
 
 
-## <a href="https://www.notion.so/Reading-List-1d6dc475a1b64737b6739719cf34667a" target="">**Reading Podcasts**</a> 
+## <a href="https://www.notion.so/Reading-List-1d6dc475a1b64737b6739719cf34667a" target="_blank">**Reading Podcasts**</a>  
 
 
 
