@@ -120,7 +120,7 @@ IRA是一款渐变风格的矢量插画素材网站，质量非常高，并且�
 
 
 
-<a href="http://static.simpledesktops.com/uploads/desktops/2018/08/04/six.png" target="_blank">**简单桌面**</a>     （4k，8k） 
+<a href="http://simpledesktops.com/" target="_blank">**简单桌面**</a>     （4k，8k） 
 
 ![desktop](https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200612214054.png)
 
