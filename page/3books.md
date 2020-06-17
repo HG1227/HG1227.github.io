@@ -5,9 +5,12 @@ permalink: / book/
 icon: book
 type: page
 ---
-
 * content
 {:toc}
+
+
+
+
 <center>
 <img   src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200605085414.webp"  
      height="100%" 
@@ -19,7 +22,7 @@ type: page
 
 
 
-<br>
+## <a href="https://www.notion.so/Reading-List-1d6dc475a1b64737b6739719cf34667a" target="">**Reading Podcasts**</a> 
 
 
 
