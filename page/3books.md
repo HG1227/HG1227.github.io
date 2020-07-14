@@ -40,6 +40,7 @@ type: page
 |  7   |     《苏菲的世界》     |   8.5    | [（挪威）乔斯坦·贾德](https://book.douban.com/search/乔斯坦·贾德) |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    |                                                              |                                                |
 |  8   |       《自控力》       |   8.2    | [[美\] 凯利·麦格尼格尔](https://book.douban.com/author/663904/) |    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>    | <a href="https://hg1227.github.io/2020/06/08/自控力/" target="_blank" class="fa fa-pencil-square-o" > </a> |                                                |
 |  9   |        《格局》        |   7.9    |                             吴军                             | <i class="fa fa-check-square-o" aria-hidden="true"></i> | <a href="https://hg1227.github.io/2020/06/19/格局/" target="_blank" class="fa fa-pencil-square-o" > </a> |                                                |
+|   10   |   《杀死一只知更鸟》   |   9.2    |   [[美\] 哈珀·李](https://book.douban.com/author/1344262/)   | <i class="fa fa-check-square-o" aria-hidden="true"></i> |                                                              |                                                |
 
 ##  <i class="fa fa-film" aria-hidden="true"></i> 电影
 
