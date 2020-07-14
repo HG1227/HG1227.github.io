@@ -1,8 +1,8 @@
 ---
 layout: post
-title: stylecloud 词云自作
+title: 词云制作  stylecloud词云图
 date:   2020-05-28
-categories: Python
+categories: 可视化
 tags: 词云
 ---
 * content
@@ -31,7 +31,7 @@ stylecloud 是一个 Python 包，一位数据科学家Max Woolf基于wordcloud�
 
 stylecloud 是一个 Python 包，一位数据科学家Max Woolf基于wordcloud优化改良而成。并添加了一些有用的功能，从而创建出独特的词云。
 
-![640](C:\Users\Hu\Desktop\640.png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714163822.png" alt="640" style="zoom:67%;" /></center>
 
 ## stylecloud 具备以下特点
 
@@ -60,7 +60,7 @@ gen_stylecloud(file_path='Trump.txt')
 
 生成效果如下：
 
-<img src="C:\Users\Hu\Desktop\640 (1).png" alt="640 (1)" style="zoom:50%;" />
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714163845.png" alt="640 (1)" style="zoom:50%;" /></center>
 
 ## 蒙版
 
@@ -72,11 +72,11 @@ gen_stylecloud(file_path='Trump.txt')
 
 在stylecloud \ static的文件夹中，**有一个fontawesome.min.css文件包含了巨量的图标，你可以定期到官方网站去升级这个图标库。**
 
-![640 (2)](C:\Users\Hu\Desktop\640 (2).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714163911.png" alt="640 (2)" style="zoom:67%;" /></center>
 
 打开发现里面包含很多图标的代码，具体长什么样呢？
 
-![640 (3)](C:\Users\Hu\Desktop\640 (3).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714163930.png" alt="640 (3)" style="zoom:80%;" /></center>
 
 多亏有中文网站分门别类罗列了图标的样子和名字，
 
@@ -84,11 +84,11 @@ gen_stylecloud(file_path='Trump.txt')
 
 它最新版地址：https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87，图标介绍更详细，分类更全面。
 
-![640 (4)](C:\Users\Hu\Desktop\640 (4).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714163951.png" alt="640 (4)" style="zoom:80%;" /></center>
 
 使用方法如下：
 
-![640 (5)](C:\Users\Hu\Desktop\640 (5).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164504.png" alt="640 (5)" style="zoom:80%;" /></center>
 
 如果我们想要使用小狗的蒙版，只需先查找到它的图标名字`fa-dog`，再加入到参数中`icon_name='fas fa-dog'`即可。
 
@@ -101,13 +101,13 @@ stylecloud.gen_stylecloud(text=' '.join(text1), collocations=False,
 
 换了一堆小动物的蒙版，生成了如下的词云动图：
 
-![640](C:\Users\Hu\Desktop\640.gif)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164441.gif" alt="640" style="zoom:80%;" /></center>
 
 其实企鹅并没有在动物里找到，不过我想起来了QQ的图标就是，但是替换后是报错的。原来品牌的图标前缀与其他不同，需要改为`icon_name='fab fa-qq'`，这样就可以啦。
 
-![640 (6)](C:\Users\Hu\Desktop\640 (6).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164323.png" alt="640 (6)" style="zoom:67%;" /></center>
 
-![640 (7)](C:\Users\Hu\Desktop\640 (7).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164301.png" alt="640 (7)" style="zoom:67%;" /></center>
 
 ## 配色
 
@@ -117,11 +117,11 @@ palettable 网站：https://jiffyclub.github.io/palettable/
 
 这是一款专业的配色网站，非常适合我们这种对词云的美观有一点小追求的人。
 
-![640 (8)](C:\Users\Hu\Desktop\640 (8).png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164243.png" alt="640 (8)" style="zoom:67%;" /></center>
 
 里面的配色方案超级多，随便点击几个给大家预览一下：
 
-![640 (1)](C:\Users\Hu\Desktop\640 (1).gif)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164209.gif" alt="640 (1)" style="zoom:67%;" /></center>
 
 我们可以通过修改参数`palette='配色方案'`来达到更改自己词云配色的目的。
 
@@ -133,7 +133,7 @@ stylecloud.gen_stylecloud(text=' '.join(text1), collocations=False,
                           output_name='腾讯-词云.png')
 ```
 
-![640 (2)](C:\Users\Hu\Desktop\640 (2).gif)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714164134.gif" alt="640 (2)" style="zoom:67%;" /></center>
 
 ## 其他参数
 
@@ -152,6 +152,10 @@ stylecloud.gen_stylecloud(text=' '.join(text1), collocations=False,
 - `output_name`：stylecloud 的输出文本名。[default: stylecloud.png]
 - `font_path`：stylecloud 所用字体 .ttf 文件的路径。[default: uses included Staatliches font]
 - `random_state`：控制单词和颜色的随机状态。
+- `colors` : 颜色列表，可以自己指定使用的颜色
+  `colors=['#ecf0f1', '#3498db', '#e74c3c']`
+
+> `max_font_size` 的默认值 200 与 size 的默认值 512 呈正相关，如要增加 `size`，你还需要考虑增加 `max_font_size` 的值。
 
 ## 参考
 
