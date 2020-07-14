@@ -1,3 +1,12 @@
+---
+layout: post
+title:  Jupyter Lab 配置不同的 kernel
+date:   2020-06-12
+categories: Tools
+tags: JupyterLab  kernel 
+---
+* content
+{:toc}
 ## Jupyter Lab 配置不同的 kernel
 
 
@@ -51,30 +60,6 @@ conda install -n sklearn ipykernel
 ```python
 jupyter kernelspec remove 环境名称
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
