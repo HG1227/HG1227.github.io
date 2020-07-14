@@ -13,7 +13,7 @@ tags: JupyterLab  kernel
 
 在安装 Jupyter Lab 的前提下，Jupyter Lab 默认使用的 base 环境下的 kernel 也就是 
 
-![image-20200710103502269](C:\Users\Hu\AppData\Roaming\Typora\typora-user-images\image-20200710103502269.png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714113644.png" alt="image-20200710103502269" style="zoom:80%;" /></center>
 
 问题：
 
@@ -47,7 +47,7 @@ conda install -n sklearn ipykernel
 
 再次打开 Jupyter Lab 可以查看到有不同的 kernel 
 
-![image-20200710104350438](C:\Users\Hu\AppData\Roaming\Typora\typora-user-images\image-20200710104350438.png)
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200714113626.png" alt="image-20200710104350438" style="zoom:67%;" /></center>
 
 前面两个是 base 环境下的 kernel。
 
