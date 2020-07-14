@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python数据可视化 词云图
+title:  Python数据可视化 -- Wordclod 词云图
 date:   2020-5-14
 categories: Python
 tags:  词云 
