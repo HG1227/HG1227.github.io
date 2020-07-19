@@ -18,7 +18,8 @@ type: page
 
 <a href="https://hg1227.github.io/Matplotlib-Seaborn/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/sklearn/" target="_blank">**sklearn**</a>  \| <a href="https://hg1227.github.io/Numpy-Pandas/" target="_blank">**Numpy-Pandas-Scipy**</a> \|  <a href="https://hg1227.github.io/Spider/" target="_blank">**Spider**</a> 
 
-<a href="https://hg1227.github.io/Python-basic/" target="_blank">**Python**</a> 
+- <a href="https://hg1227.github.io/Python-basic/" target="_blank">**Python**</a> 
+- <a href="https://hg1227.github.io/Data-Science/" target="_blank">**Data-Science**</a>   
 
 <br /> 
 
