@@ -16,10 +16,15 @@ type: page
 
 ## <i class="fa fa-file-text-o" aria-hidden="true"></i> 文档
 
-<a href="https://hg1227.github.io/Matplotlib-Seaborn/" target="_blank">**matplotlib**</a> \| <a href="https://hg1227.github.io/sklearn/" target="_blank">**sklearn**</a>  \| <a href="https://hg1227.github.io/Numpy-Pandas/" target="_blank">**Numpy-Pandas-Scipy**</a> \|  <a href="https://hg1227.github.io/Spider/" target="_blank">**Spider**</a> 
 
-- <a href="https://hg1227.github.io/Python-basic/" target="_blank">**Python**</a> 
-- <a href="https://hg1227.github.io/Data-Science/" target="_blank">**Data-Science**</a>   
+
+- <a href="https://hg1227.github.io/Python-basic/" target="_blank">**Python**</a>  Python 基础
+- <a href="https://hg1227.github.io/Matplotlib-Seaborn/" target="_blank">**matplotlib**</a>  可视化
+- <a href="https://hg1227.github.io/Numpy-Pandas/" target="_blank">**Numpy-Pandas-Scipy**</a>  科学计算库
+- <a href="https://hg1227.github.io/Data-Science/" target="_blank">**Data-Science**</a>   数学基础、数值计算等
+- <a href="https://hg1227.github.io/sklearn/" target="_blank">**sklearn**</a>  及其学习库
+- <a href="https://hg1227.github.io/Microsoft-Office-Manual/" target="_blank">**Microsoft Office Manual**</a>    
+- <a href="https://hg1227.github.io/Spider/" target="_blank">**Spider**</a>  爬虫
 
 <br /> 
 
