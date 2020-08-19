@@ -25,6 +25,7 @@ type: page
 - <a href="https://hg1227.github.io/sklearn/" target="_blank">**sklearn**</a>  及其学习库
 - <a href="https://hg1227.github.io/Microsoft-Office-Manual/" target="_blank">**Microsoft Office Manual**</a>    
 - <a href="https://hg1227.github.io/Spider/" target="_blank">**Spider**</a>  爬虫
+- <a href="https://hg1227.github.io/MySQL/" target="_blank">**MySQL**</a>  
 
 <br /> 
 

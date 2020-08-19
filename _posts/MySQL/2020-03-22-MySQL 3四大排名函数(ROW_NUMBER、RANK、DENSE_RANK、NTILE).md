@@ -35,7 +35,35 @@ insert into rk values (1, 1, 100, '2015-01-07 17:18:22.450'),
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602212356.png"/></center>
-## 一、ROW_NUMBER
+## 一、RANK
+
+`rank`函数用于返回结果集的分区内每行的排名， 行的排名是相关行之前的排名数加一。
+
+简单来说 `rank` 函数就是对查询出来的记录进行排名，与 `row_number` 函数不同的是，`rank` 函数考虑到了`over` 子句中排序字段值相同的情况，如果使用rank函数来生成序号，over子句中排序字段值相同的序号是一样的，后面字段值不相同的序号将跳过相同的排名号排下一个，也就是相关行之前的排名数加一，可以理解为根据当前的记录数生成序号，后面的记录依此类推。
+
+```sql
+select  *, rank() over (order by UserId) rankk
+from rk;
+```
+
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602214007.png"/></center>
+
+由上图可以看出，`rank`函数在进行排名时，同一组的序号是一样的，而后面的则是根据当前的记录数依次类推，图中第一、二条记录的用户Id相同，所以他们的序号是一样的，第三条记录的序号则是3。　
+
+## 二、DENSE_RANK
+
+`dense_rank`函数的功能与 `rank` 函数类似，`dense_rank` 函数在生成序号时是连续的，而`rank` 函数生成的序号有可能不连续。`dense_rank` 函数出现相同排名时，将不跳过相同排名号，`rank`值紧接上一次的rank值。在各个分组内，rank()是跳跃排序，有两个第一名时接下来就是第四名，`dense_rank()`是连续排序，有两个第一名时仍然跟着第二名。
+
+```sql
+select *, dense_rank() over (order by UserId) dk
+from rk;
+```
+
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602214329.png"/></center>
+
+图中第一、二条记录的用户Id相同，所以他们的序号是一样的，第三条记录的序号紧接上一个的序号，所以为2不为3，后面的依此类推
+
+## 三、ROW_NUMBER
 
 `row_number` 的用途的非常广泛，排序最好用他，一般可以用来实现web程序的分页，他会为查询出来的每一行记录生成一个序号，依次排序且不会重复，注意使用`row_number` 函数时必须要用`over` 子句选择对某一列进行排序才能生成序号。row_number用法实例:
 
@@ -58,31 +86,7 @@ order by TotalPrice desc ;
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602213404.png"/></center>
 两次执行得到的结果不同主要是语句的执行顺序问题，row_number 所对应的行的数据是一样的。
 
-## 二、RANK
 
-`rank`函数用于返回结果集的分区内每行的排名， 行的排名是相关行之前的排名数加一。
-
-简单来说 `rank` 函数就是对查询出来的记录进行排名，与 `row_number` 函数不同的是，`rank` 函数考虑到了`over` 子句中排序字段值相同的情况，如果使用rank函数来生成序号，over子句中排序字段值相同的序号是一样的，后面字段值不相同的序号将跳过相同的排名号排下一个，也就是相关行之前的排名数加一，可以理解为根据当前的记录数生成序号，后面的记录依此类推。
-
-```sql
-select  *, rank() over (order by UserId) rankk
-from rk;
-```
-
-<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602214007.png"/></center>
-由上图可以看出，`rank`函数在进行排名时，同一组的序号是一样的，而后面的则是根据当前的记录数依次类推，图中第一、二条记录的用户Id相同，所以他们的序号是一样的，第三条记录的序号则是3。　
-
-## 三、DENSE_RANK
-
-`dense_rank`函数的功能与 `rank` 函数类似，`dense_rank` 函数在生成序号时是连续的，而`rank` 函数生成的序号有可能不连续。`dense_rank` 函数出现相同排名时，将不跳过相同排名号，`rank`值紧接上一次的rank值。在各个分组内，rank()是跳跃排序，有两个第一名时接下来就是第四名，`dense_rank()`是连续排序，有两个第一名时仍然跟着第二名。
-
-```sql
-select *, dense_rank() over (order by UserId) dk
-from rk;
-```
-
-<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602214329.png"/></center>
-图中第一、二条记录的用户Id相同，所以他们的序号是一样的，第三条记录的序号紧接上一个的序号，所以为2不为3，后面的依此类推
 
 ## 四、NTILE
 
@@ -124,7 +128,40 @@ group by t.nt;
 ```
 
 <center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200602215758.png"/></center>
-## **总结**
+
+
+## 五、rank, dense_rank, row_number有什么区别呢？
+
+原始表：
+
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200817142335.png" alt="df106cff81cd06569e1e616cde5f69a693d646b2e2fb4ed06fcd3bfe8faa903d-1" width="60%" height="60%" /></center>
+
+
+
+```mysql
+select *,
+   rank() over (order by 成绩 desc) as ranking,
+   dense_rank() over (order by 成绩 desc) as dese_rank,
+   row_number() over (order by 成绩 desc) as row_num
+from 班级;
+```
+
+得到结果：
+
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200817142503.png" alt="07f68cabafcde24758904c92ed7ce5f614562d9ffa4885348463dac99c04cd26-1" width="60%" height="60%"/></center>
+
+从上面的结果可以看出：
+1)rank函数：这个例子中是5位，5位，5位，8位，也就是如果有并列名次的行，会占用下一名次的位置。比如正常排名是1，2，3，4，但是现在前3名是并列的名次，结果是：1，1，1，4。
+
+2)dense_rank函数：这个例子中是5位，5位，5位，6位，也就是如果有并列名次的行，不占用下一名次的位置。比如正常排名是1，2，3，4，但是现在前3名是并列的名次，结果是：1，1，1，2。
+
+3)row_number函数：这个例子中是5位，6位，7位，8位，也就是不考虑并列名次的情况。比如前3名是并列的名次，排名是正常的1，2，3，4。
+
+这三个函数的区别如下：
+
+<center><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200817142550.png" alt="d6f89b608476612c0e70ebc9c2ce521f29342be6d466270bd4e13827c37dc2bd-1" width="60%" height="60%" /></center>
+
+## 六、总结
 
 在使用排名函数的时候需要注意以下三点：
 
